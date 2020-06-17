@@ -3,7 +3,7 @@ import sys
 import OMPython
 from OMPython import OMCSessionZMQ
 
-#carica un file dato un path preso dagli argomenti della chiamata
+#carica un file dato un path preso dagli argomenti della chiamata -
 omc = OMCSessionZMQ()
 path = sys.argv[1]
 omc.execute('loadFile("'+path+'")')
