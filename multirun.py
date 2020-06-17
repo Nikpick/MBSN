@@ -1,3 +1,3 @@
 import os
 
-for file in os.listdir('.'):
+for file in os.listdir('.')
