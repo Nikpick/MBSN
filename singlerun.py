@@ -1,5 +1,9 @@
+#!/usr/bin/env python2
+
 import os
 import sys
+#runnato il comando python -m pip install -U https://github.com/OpenModelica/OMPython/archive/master.zip
+
 import OMPython
 from OMPython import OMCSessionZMQ
 
