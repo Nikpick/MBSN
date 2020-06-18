@@ -1,5 +1,6 @@
 import os
 
+os.system('chmod u+x' + ' ./singlerun.py')
 for file in os.listdir('.'): #elenco elementi in directory
     if os.path.isfile(file): #controllo se elemento e' file
         if file.endswith('.mo'): #prendo solo i .mo
