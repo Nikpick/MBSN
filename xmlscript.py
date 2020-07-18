@@ -2,8 +2,8 @@
 
 import os
 import sys
+import xmltodict
 
-import OMPython
 from OMPython import OMCSessionZMQ
 omc = OMCSessionZMQ()
 omc.execute('loadModel(Modelica)')
@@ -14,3 +14,7 @@ for file in os.listdir('.'): #elenco elementi in directory
             omc.execute('loadFile("' + file + '")')   
 
 omc.execute('dumpXMLDAE(TestModel.MyModel, translationLevel="backEnd")')
+
+with open('TestModel.MyModel.xml') as fd:
+    doc = xmltodict.parse(fd.read())
+print(doc)
