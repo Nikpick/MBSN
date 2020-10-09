@@ -13,13 +13,8 @@ for file in os.listdir('.'): #elenco elementi in directory
         if file.endswith('.mo'): #prendo solo i .mo
             omc.execute('loadFile("' + file + '")')   
 
-if(len(sys.argv) > 2):
-    className = sys.argv[2] + '.' + sys.argv[1]
-else: 
-    className = sys.argv[1]
+omc.execute('dumpXMLDAE(TestModel.MyModel, translationLevel="backEnd")')
 
-omc.execute('dumpXMLDAE(' + className + ', translationLevel="backEnd")')
-
-with open(className + '.xml') as fd:
+with open('TestModel.MyModel.xml') as fd:
     doc = xmltodict.parse(fd.read())
 print(doc)
