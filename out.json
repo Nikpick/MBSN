@@ -1,0 +1,322 @@
+{
+	"dae": {
+		"@xmlns:p1": "http://www.w3.org/1998/Math/MathML",
+		"@xmlns:xlink": "http://www.w3.org/1999/xlink",
+		"@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+		"@xsi:noNamespaceSchemaLocation": "http://home.dei.polimi.it/donida/Projects/AutoEdit/Images/DAE.xsd",
+		"variables": {
+			"@dimension": "8",
+			"orderedVariables": {
+				"@dimension": "6",
+				"variablesList": {
+					"variable": [
+						{
+							"@id": "1",
+							"@name": "myclass.z",
+							"@variability": "continuous",
+							"@direction": "none",
+							"@type": "Real",
+							"@fixed": "false",
+							"@flow": "NonConnector",
+							"@stream": "NonStreamConnector",
+							"attributesValues": {
+								"unit": {
+									"@string": "\"\"",
+									"MathML": {
+										"math": {
+											"@xmlns": "http://www.w3.org/1998/Math/MathML",
+											"cn": {
+												"@type": "constant"
+											}
+										}
+									}
+								}
+							}
+						},
+						{
+							"@id": "2",
+							"@name": "myclass.y",
+							"@variability": "continuousState",
+							"@direction": "none",
+							"@type": "Real",
+							"@differentiatedIndex": "1",
+							"@fixed": "false",
+							"@flow": "NonConnector",
+							"@stream": "NonStreamConnector",
+							"attributesValues": {
+								"unit": {
+									"@string": "\"\"",
+									"MathML": {
+										"math": {
+											"@xmlns": "http://www.w3.org/1998/Math/MathML",
+											"cn": {
+												"@type": "constant"
+											}
+										}
+									}
+								}
+							}
+						},
+						{
+							"@id": "3",
+							"@name": "myclass.x",
+							"@variability": "continuousState",
+							"@direction": "none",
+							"@type": "Real",
+							"@differentiatedIndex": "1",
+							"@fixed": "false",
+							"@flow": "NonConnector",
+							"@stream": "NonStreamConnector",
+							"attributesValues": {
+								"unit": {
+									"@string": "\"\"",
+									"MathML": {
+										"math": {
+											"@xmlns": "http://www.w3.org/1998/Math/MathML",
+											"cn": {
+												"@type": "constant"
+											}
+										}
+									}
+								}
+							}
+						},
+						{
+							"@id": "4",
+							"@name": "Params.b",
+							"@variability": "continuousState",
+							"@direction": "none",
+							"@type": "Real",
+							"@differentiatedIndex": "1",
+							"@fixed": "false",
+							"@flow": "NonConnector",
+							"@stream": "NonStreamConnector",
+							"attributesValues": {
+								"unit": {
+									"@string": "\"\"",
+									"MathML": {
+										"math": {
+											"@xmlns": "http://www.w3.org/1998/Math/MathML",
+											"cn": {
+												"@type": "constant"
+											}
+										}
+									}
+								}
+							}
+						},
+						{
+							"@id": "5",
+							"@name": "Params.a",
+							"@variability": "continuousState",
+							"@direction": "none",
+							"@type": "Real",
+							"@differentiatedIndex": "1",
+							"@fixed": "false",
+							"@flow": "NonConnector",
+							"@stream": "NonStreamConnector",
+							"attributesValues": {
+								"unit": {
+									"@string": "\"\"",
+									"MathML": {
+										"math": {
+											"@xmlns": "http://www.w3.org/1998/Math/MathML",
+											"cn": {
+												"@type": "constant"
+											}
+										}
+									}
+								}
+							}
+						},
+						{
+							"@id": "6",
+							"@name": "$cse1",
+							"@variability": "continuous",
+							"@direction": "none",
+							"@type": "Real",
+							"@fixed": "false",
+							"@flow": "NonConnector",
+							"@stream": "NonStreamConnector"
+						}
+					]
+				}
+			},
+			"aliasVariables": {
+				"@dimension": "2",
+				"variablesList": {
+					"variable": [
+						{
+							"@id": "1",
+							"@name": "myclass.b",
+							"@variability": "continuous",
+							"@direction": "none",
+							"@type": "Real",
+							"@fixed": "false",
+							"@flow": "NonConnector",
+							"@stream": "NonStreamConnector",
+							"bindExpression": {
+								"@string": "Params.b",
+								"MathML": {
+									"math": {
+										"@xmlns": "http://www.w3.org/1998/Math/MathML",
+										"ci": "Params.b"
+									}
+								}
+							}
+						},
+						{
+							"@id": "2",
+							"@name": "myclass.a",
+							"@variability": "continuous",
+							"@direction": "none",
+							"@type": "Real",
+							"@fixed": "false",
+							"@flow": "NonConnector",
+							"@stream": "NonStreamConnector",
+							"bindExpression": {
+								"@string": "Params.a",
+								"MathML": {
+									"math": {
+										"@xmlns": "http://www.w3.org/1998/Math/MathML",
+										"ci": "Params.a"
+									}
+								}
+							}
+						}
+					]
+				}
+			}
+		},
+		"equations": {
+			"@dimension": "6",
+			"algorithm": {
+				"@id": "1",
+				"#text": "algorithm\n  myclass.z := $START.myclass.z;\n  myclass.z := myclass.x / myclass.y;"
+			},
+			"equation": [
+				{
+					"@id": "2",
+					"MathML": {
+						"math": {
+							"@xmlns": "http://www.w3.org/1998/Math/MathML",
+							"apply": {
+								"equivalent": null,
+								"apply": [
+									{
+										"diff": null,
+										"ci": "myclass.y"
+									},
+									{
+										"times": null,
+										"ci": [
+											"Params.b",
+											"myclass.x"
+										]
+									}
+								]
+							}
+						}
+					},
+					"#text": "der(myclass.y) = Params.b * myclass.x"
+				},
+				{
+					"@id": "3",
+					"MathML": {
+						"math": {
+							"@xmlns": "http://www.w3.org/1998/Math/MathML",
+							"apply": {
+								"equivalent": null,
+								"apply": [
+									{
+										"diff": null,
+										"ci": "myclass.x"
+									},
+									{
+										"times": null,
+										"ci": "$cse1",
+										"apply": {
+											"times": null,
+											"ci": [
+												"Params.a",
+												"myclass.y"
+											]
+										}
+									}
+								]
+							}
+						}
+					},
+					"#text": "der(myclass.x) = $cse1 * Params.a * myclass.y"
+				},
+				{
+					"@id": "4",
+					"MathML": {
+						"math": {
+							"@xmlns": "http://www.w3.org/1998/Math/MathML",
+							"apply": {
+								"equivalent": null,
+								"apply": {
+									"diff": null,
+									"ci": "Params.b"
+								},
+								"cn": {
+									"@type": "real",
+									"#text": "0.0"
+								}
+							}
+						}
+					},
+					"#text": "der(Params.b) = 0.0"
+				},
+				{
+					"@id": "5",
+					"MathML": {
+						"math": {
+							"@xmlns": "http://www.w3.org/1998/Math/MathML",
+							"apply": {
+								"equivalent": null,
+								"apply": {
+									"diff": null,
+									"ci": "Params.a"
+								},
+								"cn": {
+									"@type": "real",
+									"#text": "0.0"
+								}
+							}
+						}
+					},
+					"#text": "der(Params.a) = 0.0"
+				},
+				{
+					"@id": "6",
+					"MathML": {
+						"math": {
+							"@xmlns": "http://www.w3.org/1998/Math/MathML",
+							"apply": {
+								"equivalent": null,
+								"ci": "$cse1",
+								"apply": {
+									"TestModel.Functions.pow": null,
+									"cn": {
+										"@type": "real",
+										"#text": "2.718281828459045"
+									},
+									"ci": "myclass.x"
+								}
+							}
+						}
+					},
+					"#text": "$cse1 = TestModel.Functions.pow(2.718281828459045, myclass.x)"
+				}
+			]
+		},
+		"functions": {
+			"function": {
+				"@name": "TestModel.Functions.pow",
+				"ModelicaImplementation": "function(x :: Real * power :: Real) => Real.TestModel.Functions.powfunction TestModel.Functions.pow\"Inline if necessary\"\n  input Real x;\n  input Real power;\n  output Real y;\nalgorithm\n  y := x ^ power;\nend TestModel.Functions.pow;"
+			}
+		}
+	}
+}
