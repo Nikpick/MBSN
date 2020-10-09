@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/MBSN.dir/main.cpp.o  -o MBSN 

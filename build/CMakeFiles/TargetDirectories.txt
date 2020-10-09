@@ -1,0 +1,3 @@
+/home/axsnxs/Scrivania/MBSN/build/CMakeFiles/edit_cache.dir
+/home/axsnxs/Scrivania/MBSN/build/CMakeFiles/rebuild_cache.dir
+/home/axsnxs/Scrivania/MBSN/build/CMakeFiles/MBSN.dir

@@ -1,13 +1,18 @@
+/*
+File creato da MDG, SM, BD e NG
+*/
 
-//#include <libraries/jsoncpp/include/json/reader.h>
-//include <libraries/jsoncpp>
-//\libraries\jsoncpp\src\lib_json\json_reader.cpp
-
-#include "./libraries/jsoncpp/src/lib_json/json_tool.h"
-#include "./../../include/json/config.h"
+#include <jsoncpp/json/value.h>
+// #include <jsoncpp/json/json.h>
+#include <fstream>
+#include <iostream>
+#include <stdio.h>
 
 int main(int argc, char const *argv[])
 {
+    
+    printf("cioa\n");   
+    
     
     return 0;
 }
