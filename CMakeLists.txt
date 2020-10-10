@@ -1,6 +1,11 @@
-set(EXTERNAL_LIB_HEADERS libraries/jsoncpp)
+cmake_minimum_required(VERSION 3.0.0)
+project(MBSN VERSION 0.1.0)
 
-target_include_directories(
-  executable_name PRIVATE
-  ${EXTERNAL_LIB_HEADERS}
-)
+include(CTest)
+enable_testing()
+
+add_executable(MBSN main.cpp)
+
+set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+include(CPack)

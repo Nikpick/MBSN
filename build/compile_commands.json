@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/axsnxs/Scrivania/openmodelica/MBSN/build",
+  "command": "/bin/g++-9    -O3 -DNDEBUG   -o CMakeFiles/MBSN.dir/main.cpp.o -c /home/axsnxs/Scrivania/openmodelica/MBSN/main.cpp",
+  "file": "/home/axsnxs/Scrivania/openmodelica/MBSN/main.cpp"
+}
+]

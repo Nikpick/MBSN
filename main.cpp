@@ -1,13 +1,29 @@
+/*
+File creato da MDG, SM, BD e NG
 
-//#include <libraries/jsoncpp/include/json/reader.h>
-//include <libraries/jsoncpp>
-//\libraries\jsoncpp\src\lib_json\json_reader.cpp
+REQUISITI:
+usare CMake Tools di Visual Studio Code per compilare ed eseguire il codice,
+altrimenti installare libreria jsoncpp, usare compilatore g++ ed eseguire
+il link alla libreria.
+*/
 
-#include "./libraries/jsoncpp/src/lib_json/json_tool.h"
-#include "./../../include/json/config.h"
+#include "cpp/json_reader.cpp"
+#include <fstream>
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
 
 int main(int argc, char const *argv[])
 {
+    auto modello = read_and_parse("./out.json");
+    std::string data_error = "Data not found, replaced";
     
+    for (auto const& id : modello["dae"].getMemberNames()) {
+        std::cout << id << std::endl;
+    }
+
+    //std::cout << modello.get("dae",  data_error).get("variables",  data_error) << std::endl;
+
     return 0;
 }
