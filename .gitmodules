@@ -1,6 +1,6 @@
 [submodule "libraries/jsoncpp"]
 	path = libraries/jsoncpp
-	url = https://github.com/open-source-parsers/jsoncpp
+	url = https://github.com/open-source-parsers/jsoncpp.git
 [submodule "libraries/data-model"]
 	path = libraries/data-model
 	url = https://bitbucket.org/mclab/data-model/src/master/data-model.git
