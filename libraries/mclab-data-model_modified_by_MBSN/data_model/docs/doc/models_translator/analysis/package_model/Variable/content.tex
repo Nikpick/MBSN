@@ -1,0 +1,23 @@
+%!TEX root = ../../../../root.tex
+
+La classe \textit{Variable} rappresenta delle variabili, ovvero ciò che stabilisce la dinamica di come evolve lo stato di un modello nel tempo. Le componenti di rilevanza di una variabile sono:
+\begin{itemize}
+	\item nome: che stabilisce il nome della variabile;
+	\item input: stabilisce se la variabile è di input;
+	\item output: stabilisce se la variabile è di output;
+	\item \hyperref[sec:modelstranslator:analysis:model_analysis:type]{tipo}: rappresentato tramite l'associazione tra \textit{Variable} e \textit{Type}. Stabilisce il tipo della variabile;
+	\item \hyperref[sec:modelstranslator:analysis:model_analysis:unit]{unità}: rappresentata tramite l'associazione tra \textit{Variable} e \textit{Unit}. Stabilisce di che unità è la variabile;
+	\item valore iniziale: rappresentato tramite la classe di associazione \textit{InitAss}. Stabilisce il valore, a tempo di simulazione $0$, della variabile, ovvero lo stato di partenza del modello. Il valore viene dato dall'associazione con la classe \hyperref[sec:modelstranslator:analysis:model_analysis:expression]{\textit{Expression}}.
+\end{itemize}
+Per la seguente classe sono inoltre presenti dei vincoli esterni (espressi in logica del primo ordine), quali:
+\begin{enumerate}
+	\item \texttt{L'assegnamento iniziale di una variabile deve riferirsi ad una del modulo} \\
+		  $\forall \ m,v,e \ Module(m) \ \land \ initAss(m, v, e) \ \land \ Expression(e) \ \land \ Variable(v) \ \Rightarrow \ modVar(m, v)$ \\
+	\item \texttt{L'assegnamento iniziale di una variabile deve essere coerente con il tipo della variabile} \\
+		  $\forall \ m,v,e,t \ Module(m) \ \land \ Variable(v) \ Expression(e) \ \land \ initAss(m, v, e) \ \land Type(t) \ \land \ varType(t, v) \ \Rightarrow \ typeExpr(t, e)$ \\
+\end{enumerate}
+
+La classe \textit{Variable} è una classe astratta, ed è sfruttata per la realizzazione delle classi più generali \hyperref[sec:modelstranslator:analysis:model_analysis:variable:parameter]{\textit{Parameter}} e \hyperref[sec:modelstranslator:analysis:model_analysis:variable:species]{\textit{Species}}.
+
+\InputSection[sec:modelstranslator:analysis:model_analysis:variable:species]{Classe Species}{Species/content.tex}
+\InputSection[sec:modelstranslator:analysis:model_analysis:variable:parameter]{Classe Parameter}{Parameter/content.tex}

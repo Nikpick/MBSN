@@ -1,0 +1,6 @@
+SpecificaClasse Expression:
+	isConstraint()
+
+	pre: nessuna
+
+	algorithm: return this.typeExpr == "Boolean" 

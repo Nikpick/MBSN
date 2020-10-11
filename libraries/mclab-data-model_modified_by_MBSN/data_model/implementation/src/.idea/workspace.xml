@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Default" GENERATION_OPTIONS="-D CMAKE_&lt;LANG&gt;_COMPILER=/Library/Developer/CommandLineTools/usr/bin/clang++" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9dcda624-4a2c-497a-aaf0-74f788e2b767" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/3.15.3/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/3.15.3/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/3.15.3/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/3.15.3/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/3.15.3/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/3.15.3/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/3.15.3/CompilerIdC/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/3.15.3/CompilerIdC/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/3.15.3/CompilerIdCXX/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/3.15.3/CompilerIdCXX/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/src.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/src.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/src.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/src.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/src.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/src.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/CMakeFiles/src.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-default/src" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-default/src" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="src" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$" />
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="20" />
+    <option name="y" value="43" />
+    <option name="width" value="1400" />
+    <option name="height" value="837" />
+  </component>
+  <component name="ProjectId" id="1Q3cQLYXvSdXgHxIo3qNeer87FE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/toModelica" />
+      <recent name="$PROJECT_DIR$/parser/prova" />
+      <recent name="$PROJECT_DIR$/VerificaEValidazione" />
+      <recent name="$PROJECT_DIR$/cpp/Model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/parser" />
+      <recent name="$PROJECT_DIR$/cmake-build-default" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="src" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;Izhikevich_2003_neuron_model.phml&quot;" WORKING_DIR="file://$PROJECT_DIR$/parser/" PASS_PARENT_ENVS_2="true" PROJECT_NAME="src" TARGET_NAME="src" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="src" RUN_TARGET_NAME="src">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9dcda624-4a2c-497a-aaf0-74f788e2b767" name="Default Changelist" comment="" />
+      <created>1566038354504</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566038354504</updated>
+      <workItem from="1566038356826" duration="40503000" />
+      <workItem from="1566211089578" duration="21196000" />
+      <workItem from="1566389043422" duration="4703000" />
+      <workItem from="1566464939062" duration="6527000" />
+      <workItem from="1566482729398" duration="31867000" />
+      <workItem from="1566574344411" duration="24212000" />
+      <workItem from="1566807000484" duration="40306000" />
+      <workItem from="1567002710431" duration="735000" />
+      <workItem from="1567069791062" duration="14832000" />
+      <workItem from="1567187946064" duration="1262000" />
+      <workItem from="1567286178789" duration="14046000" />
+      <workItem from="1567435187638" duration="99024000" />
+      <workItem from="1567775509571" duration="33000" />
+      <workItem from="1567785204189" duration="99000" />
+      <workItem from="1567847491212" duration="502000" />
+      <workItem from="1568653636945" duration="5000" />
+      <workItem from="1568653782530" duration="11624000" />
+      <workItem from="1568707934882" duration="24495000" />
+      <workItem from="1568742531204" duration="112429000" />
+      <workItem from="1569263694259" duration="723000" />
+      <workItem from="1569433680164" duration="1551000" />
+      <workItem from="1569436647180" duration="206000" />
+      <workItem from="1569486629669" duration="1679000" />
+      <workItem from="1569677520849" duration="1472000" />
+      <workItem from="1569834549642" duration="50000" />
+      <workItem from="1569834793667" duration="108233000" />
+      <workItem from="1570520272518" duration="7877000" />
+      <workItem from="1570557107114" duration="3344000" />
+      <workItem from="1570606404469" duration="20801000" />
+      <workItem from="1570724658110" duration="23000" />
+      <workItem from="1570724710276" duration="2724000" />
+      <workItem from="1570811619202" duration="16184000" />
+      <workItem from="1571079077376" duration="28000" />
+      <workItem from="1571565845266" duration="6204000" />
+      <workItem from="1572091594123" duration="2622000" />
+      <workItem from="1572095354847" duration="41000" />
+      <workItem from="1572096493069" duration="413000" />
+      <workItem from="1572096919235" duration="2309000" />
+      <workItem from="1572288210814" duration="179000" />
+      <workItem from="1572288483702" duration="583000" />
+      <workItem from="1572289090950" duration="28000" />
+      <workItem from="1572722090393" duration="978000" />
+      <workItem from="1574013197211" duration="709000" />
+      <workItem from="1574015350503" duration="2881000" />
+      <workItem from="1574364736360" duration="20000" />
+      <workItem from="1574365074303" duration="1467000" />
+      <workItem from="1574531477298" duration="29000" />
+      <workItem from="1574531564036" duration="1035000" />
+      <workItem from="1584096470399" duration="31000" />
+    </task>
+    <task id="LOCAL-00001" summary="Fixed some issues in translation and simulate only capsule if there's only one">
+      <created>1574019945959</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574019945959</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added numberOfIntervals in Modelica generated">
+      <created>1574531858945</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1574531858945</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add folders to ignore">
+      <created>1574532048078</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574532048078</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add folders to ignore">
+      <created>1574532497202</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1574532497202</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Remove some ignored folders">
+      <created>1574532604160</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1574532604160</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed some issues in translation and simulate only capsule if there's only one" />
+    <MESSAGE value="Added numberOfIntervals in Modelica generated" />
+    <MESSAGE value="add folders to ignore" />
+    <MESSAGE value="Add folders to ignore" />
+    <MESSAGE value="Remove some ignored folders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove some ignored folders" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="397" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1584096475449">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="397" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1584096475449" />
+  </component>
+</project>

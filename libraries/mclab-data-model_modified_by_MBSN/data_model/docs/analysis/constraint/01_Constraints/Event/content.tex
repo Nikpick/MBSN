@@ -1,0 +1,10 @@
+%!TEX root=../../root.tex
+
+\begin{enumerate}
+	\item \texttt{La trigger condition di un evento deve essere di tipo booleana} \\
+		  $\forall \ m,e,c \ Module(m) \ \land \ modEvent(m, e) \ \land \ Event(e) \ \land \ trigger(e, c) \ \land Expression(c) \ \Rightarrow \ typeExpr(Boolean, c)$ \\
+	\item \texttt{La priority di un evento deve essere numerico} \\
+		  $\forall \ m,e,p \ Module(m) \ \land \ modEvent(m, e) \ \land \ Event(e) \ \land \ priority(e, p) \ \land Expression(p) \ \Rightarrow \ typeExpr(Integer, p) \ \lor \ typeExpr(Real, p)$ \\
+	\item \texttt{Il delay di un evento deve essere numerico} \\
+		  $\forall \ m,e,d \ Module(m) \ \land \ modEvent(m, e) \ \land \ Event(e) \ \land \ delay(e, d) \ \land Expression(d) \ \Rightarrow \ typeExpr(Integer, d) \ \lor \ typeExpr(Real, d)$ \\
+\end{enumerate}

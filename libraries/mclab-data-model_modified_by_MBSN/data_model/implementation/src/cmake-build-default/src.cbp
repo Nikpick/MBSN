@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="src"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="src">
+				<Option output="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default/src" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp"/>
+					<Add directory="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers"/>
+					<Add directory="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/include"/>
+					<Add directory="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default/Makefile&quot;  VERBOSE=1 src"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="src/fast">
+				<Option output="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default/src" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp"/>
+					<Add directory="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers"/>
+					<Add directory="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/include"/>
+					<Add directory="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default/Makefile&quot;  VERBOSE=1 src/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cmake-build-default/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Model/Arg.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Model/BaseType.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Model/BuiltInOp.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Model/ConditionalExpression.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Model/Connection.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Model/Constant.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Model/DirConnection.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Model/Event.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Model/ExprVar.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Model/Expression.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Model/InitAss.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Model/Literal.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Model/Module.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Model/Operation.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Model/OperationArg.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Model/OperationCall.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Model/Parameter.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Model/Species.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Model/Type.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Model/Unit.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Model/UserDefOp.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Model/Variable.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Statements/Block.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Statements/Break.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Statements/ElseStatem.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Statements/ExpressionStatement.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Statements/ForStatem.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Statements/ForStatement.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Statements/IfStatement.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Statements/NestedStatement.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Statements/Return.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Statements/StNest.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Statements/Statement.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Statements/StatementOwner.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Statements/ThenStatem.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Statements/WhenStatem.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Statements/WhenStatement.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Statements/WhileStatem.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/cpp/Statements/WhileStatement.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Model/Arg.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Model/BaseType.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Model/BuiltInOp.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Model/ConditionalExpression.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Model/Connection.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Model/Constant.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Model/DirConnection.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Model/Event.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Model/ExprVar.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Model/Expression.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Model/InitAss.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Model/Literal.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Model/Module.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Model/Operation.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Model/OperationArg.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Model/OperationCall.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Model/Parameter.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Model/Species.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Model/Type.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Model/Unit.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Model/UserDefOp.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Model/Variable.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Statements/Block.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Statements/Break.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Statements/ElseStatem.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Statements/ExpressionStatement.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Statements/ForStatem.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Statements/ForStatement.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Statements/IfStatement.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Statements/NestedStatement.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Statements/Return.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Statements/StNest.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Statements/Statement.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Statements/StatementOwner.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Statements/ThenStatem.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Statements/WhenStatem.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Statements/WhenStatement.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Statements/WhileStatem.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/headers/Statements/WhileStatement.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/include/AbstractAssociationLink.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/include/AbstractAssociationRole.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/include/ArrayIndexOutOfBoundsException.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/include/DoubleOwnerAssociationLink.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/include/MultiplicityConstraintException.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/include/OrderedAssociationRole.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/include/OrderedSet.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/include/SingleOwnerAssociationLink.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/include/StrongAssociationRole.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/include/WeakAssociationRole.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/main.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/parser/Parser.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/parser/Parser.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/toModelica/model2Modelica.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/toModelica/model2Modelica.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/AlgSectionException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/AlgorithmStatException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/AlreadyInModException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/ArgumentInOtherFunctionException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/ArrayIndexOutOfBoundsException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/AssInEventException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/BaseTypeException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/CondExpressionException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/ConditionTypeException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/DefInOperationException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/DelayTypeException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/ElseAlreadyInException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/ElseOnlyWithThenException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/ElseStatException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/EqualsVarInConnException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/ForIndexException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/InitAssException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/InitAssTypeException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/InitAssVarException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/IterationStatException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/LiteralException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/MultiplicityConstraintException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/NoIDException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/NoModuleConnectionException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/NoModuleFoundException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/NoPHMLInputException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/NoStatementException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/NoTypeFoundException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/NoUnitFoundException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/NoVariableFoundException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/NotInvolvedInLinkException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/NotSupportedException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/NullPointerException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/OpNotInModException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/OperationTypeException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/ParameterException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/PriorityTypeException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/RemoveStatException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/StatInBlockException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/StatNotInWhenException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/StatemInWhenException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/StatementOwnerException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/StatementWithOwnerException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/TriggerTypeException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/TypeVarInConnException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/VarInAnotherModuleException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/VarNotInModuleException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/WhenStatOwnerException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/utils/exceptions/WhileCondTypeException.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/simone/Desktop/Universita/Terzo_Anno/Tesi/DataModel/implementation/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

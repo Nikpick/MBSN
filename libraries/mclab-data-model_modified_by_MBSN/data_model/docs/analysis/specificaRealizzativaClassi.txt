@@ -1,0 +1,6 @@
+SpecificaClasse Expression:
+	isConstraint()
+
+	pre: nessuna
+
+	algorithm: ritorna "true" se l'espressione è boolena, "false" altrimenti 

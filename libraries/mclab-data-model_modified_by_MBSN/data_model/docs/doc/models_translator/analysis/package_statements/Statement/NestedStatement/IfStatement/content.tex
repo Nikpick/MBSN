@@ -1,0 +1,14 @@
+%!TEX root = ../../../../../../root.tex
+
+Ciascun istanza della classe \textit{IfStatement} rappresenta il costrutto condizionale if-then-else; per poter rappresentare sia il ramo then che il ramo else del costrutto si ricorre all'utilizzo dello stereotipo $\langle\langle override \rangle\rangle$ che coinvolge due associazioni, entrambe con molteplicità ristretta rispetto all'associazione più generale. Le componenti di rilevanza di questa classe sono:
+\begin{itemize}
+	\item condizione: realizzata tramite l'associazione tra la classe \textit{IfStatement} e la classe \hyperref[sec:modelstranslator:analysis:model_analysis:expression]{\textit{Expression}}. Stabilisce la condizione del costrutto if, ovvero la condizione per cui il ramo then del costrutto deve essere eseguito;
+	\item then statement: realizzato tramite l'associazione \textit{thenStatem} tra la classe \textit{IfStatement} e la classe \hyperref[sec:modelstranslator:analysis:statements_analysis:statement]{\textit{Statement}}. Stabilisce l'\textbf{unico} statement del quale è composto il ramo then del costrutto if;
+	\item else statement: realizzato tramite l'associazione \textit{elseStatem} tra la classe \textit{IfStatement} e la classe \hyperref[sec:modelstranslator:analysis:statements_analysis:statement]{\textit{Statement}}. Stabilisce l'\textbf{unico} statement del quale è composto il ramo else del costrutto if. Questa componente è opzionale poiché il costrutto if può essere privo del ramo else;
+\end{itemize}
+
+Inoltre la classe \textit{IfStatement} contiene i seguenti vincoli esterni:
+\begin{enumerate}
+	\item \texttt{La condizione di uno statement if deve essere booleana} \\
+		  $\forall \ IfStatement(s) \ \land \ Expression(e) \ \land \ condIfSt(s, e) \ \Rightarrow \ \ typeExpr(Boolean, e)$ \\  
+\end{enumerate}

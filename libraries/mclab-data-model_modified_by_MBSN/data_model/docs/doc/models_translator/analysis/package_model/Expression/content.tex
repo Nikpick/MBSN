@@ -1,0 +1,36 @@
+%!TEX root = ../../../../root.tex
+
+Un'istanza della classe \textit{Expression} rappresenta un'espressione. Le espressioni sono utilizzate per assegnare valori a variabili e per stabilire condizioni da soddisfare. 
+
+La classe \textit{Expression} è una classe astratta, ed è sfruttata per realizzare le seguenti classi:
+\begin{itemize}
+	\item classe \textit{Literal}: ciascuna istanza di questa classe rappresenta le espressioni che consistono di un solo valore letterale;
+	\item classe \textit{Constant}: ciascuna istanza di questa classe rappresenta le espressioni che consistono di un unico simbolo di costante;
+	\item classe \textit{ExprVar}: ciascuna istanza di questa classe rappresenta le espressioni che si riferiscono ad una variabile del modello;
+	\item classe \textit{ConditionalExpression}: ciascuna istanza di questa classe rappresenta le espressioni che, a seconda se la condizione (rappresentata tramite l'associazione \textit{condExpr} tra la classe \textit{ConditionalExpression} ed \textit{Expression}) assume valore di verità \textit{"true"} o \textit{"false"}, viene valutata in modo differente;
+	\item classe \textit{OperationCall}: ciascuna istanza di questa classe rappresenta le espressioni che si riferiscono a una chiamata a operazione. In questo caso gli argomenti passati sono formali e sono rappresentati dalla classe di associazione \textit{arg}, il cui valore è dato dall'associazione con \textit{Expression};
+\end{itemize}
+La classe \textit{Expression} è anche composta di un'operazione $isConstraint()$, la quale stabilisce se l'espressione considerata è o meno un constraint; il comportamento è descritto di seguito:
+\begin{itemize}
+	\item $isContraint()\ :\ bool$ 
+		\begin{description}
+			\item [Pre:]\ \\ None
+			\item [Post:]\ \\ Se il tipo dell'espressione è \textit{Boolean} restituisce \textit{"true"}, \textit{"false"} altrimenti.
+		\end{description}
+\end{itemize}
+Inoltre la seguente classe presenta i seguenti vincoli esterni:
+\begin{enumerate}
+	\item \texttt{La condizione di un'espressione condizionale deve essere booleana} \\
+		  $\forall \ e,c,th \ ConditionalExpression(e) \ \land \ Expression(cond) \ \land \ condExpr(e, cond) \ \Rightarrow \ typeExpr(Boolean, cond)$ \\
+	\item \texttt{Il tipo delle espressioni then ed else di un'espressione condizionale deve essere uguale al tipo dell'espressione condizionale} \\
+		  \begin{itemize}
+		  	\item $\forall \ e,c,th,t \ ConditionalExpression(e) \ \land \ Expression(th) \ \land \ thenCondExpr(e, th) \ \land \ Type(t) \ \land typeExpr(t, e) \ \Rightarrow \ typeExpr(t, th)$ \\
+		  	\item $\forall \ e,c,el,t \ ConditionalExpression(e) \ \land \ Expression(el) \ \land \ elseCondExpr(e, el) \ \land \ Type(t) \ \land typeExpr(t, e) \ \Rightarrow \ typeExpr(t, th)$ \\
+		  \end{itemize}
+	\item \texttt{Le espressioni coinvolgono solo variabili definite nel modello} \\
+		  $\forall \ e,v,m \ Model(m) \ \land \ modExpr(m, e) \ \land \ ExprVar(e) \ \land \ varRef(e,v) \ \land \ Variable(v) \ \Rightarrow \ modVar(m, v)$ \\
+	\item \texttt{Le espressioni coinvolgono solo chiamate a funzioni che sono definite nel modello} \\
+		  $\forall \ e,v,m \ Model(m) \ \land \ modExpr(m, e) \ \land \ OperationCall(e) \ \land \ refers(e,op) \ \land \ Operation(op) \ \Rightarrow \ modOp(m, op)$ \\
+	\item \texttt{Il tipo di ritorno di un'operazione deve essere uguale al tipo dell'operazione invocata} \\
+		  $\forall \ op,t,o \ OperationCall(op) \ \land \ typeExpr(t, op) \ \land \ Type(t) \ \land \ refers(op, o) \ \land Operation(o) \ \Rightarrow \ return(t, o)$ \\
+\end{enumerate}

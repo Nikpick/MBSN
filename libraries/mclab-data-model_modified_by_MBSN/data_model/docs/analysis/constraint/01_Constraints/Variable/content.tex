@@ -1,0 +1,8 @@
+%!TEX root=../../root.tex
+
+\begin{enumerate}
+	\item \texttt{L'assegnamento iniziale di una variabile deve riferirsi ad una del modulo} \\
+		  $\forall \ m,v,e \ Module(m) \ \land \ initialAss(m, v, e) \ \land \ Expression(e) \ \land \ Variable(v) \ \Rightarrow \ modVar(m, v)$ \\
+	\item \texttt{L'assegnamento iniziale di una variabile deve essere coerente con il tipo della variabile} \\
+		  $\forall \ m,v,e,t \ Module(m) \ \land \ initialAss(m, v, e) \ \land \ Expression(e) \ \land \ typeExpr(t, v) \ \land Type(t) \ \land \ Variable(v) \ \Rightarrow \ typeExpr(t, e)$ \\
+\end{enumerate}

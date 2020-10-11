@@ -1,0 +1,13 @@
+%!TEX root = ../../../../../../root.tex
+
+Ogni istanza della classe \textit{WhileStatement} rappresenta il costrutto iterativo while; in questo caso il numero degli statement di cui è composto il \textit{WhileStatement} è più specifico del numero di statement di un \textit{Nested<statement} e per questo motivo viene applicato l'$\langle\langle override \rangle\rangle$ all'associazione della classe più generale. Le componenti di rilevanza di questa classe sono:
+\begin{itemize}
+	\item condizione: realizzata dall'associazione tra la classe \textit{WhileStatement} e la classe \hyperref[sec:modelstranslator:analysis:model_analysis:expression]{\textit{Expression}}. Stabilisce la condizione del costrutto while, ovvero quando il while deve essere eseguito;
+	\item \hyperref[sec:modelstranslator:analysis:statements_analysis:statement]{statement}: realizzato dall'associazione tra la classe \textit{WhileStatement} e la classe \hyperref[sec:modelstranslator:analysis:statements_analysis:statement]{\textit{Statement}}. Stabilisce l'\textbf{unico} statement del quale è composto il costrutto while.
+\end{itemize}
+
+La seguente classe presenta inoltre i seguenti vincoli esterni:
+\begin{enumerate}
+	\item \texttt{La condizione di uno statement while deve essere booleana} \\
+		  $\forall \ WhileStatement(s) \ \land \ Expression(e) \ \land \ condWhile(s, e) \ \Rightarrow \ \ typeExpr(Boolean, e)$ \\  
+\end{enumerate}

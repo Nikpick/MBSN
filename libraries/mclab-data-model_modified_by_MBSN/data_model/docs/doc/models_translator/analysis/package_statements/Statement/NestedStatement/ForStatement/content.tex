@@ -1,0 +1,9 @@
+%!TEX root = ../../../../../../root.tex
+
+Ciascuna istanza della classe \textit{ForStatement} rappresenta il costrutto iterativo for; anche in questo il numero di statement di cui è composto è più specifico del numero di statement di cui è composta la classe più generale \hyperref[sec:modelstranslator:analysis:statements_analysis:statement:nestedstatement]{\textit{NestedStatement}}, e quindi all'associazione più generale viene applicato l'$\langle\langle override \rangle\rangle$. Le componenti di rilevanza di questa classe sono:
+\begin{itemize}
+	\item index start: realizzato dall'associazione \textit{begin} tra la classe \textit{ForStatement} e la classe \hyperref[sec:modelstranslator:analysis:model_analysis:expression]{\textit{Expression}}. Rappresenta l'inizializzazione dell'indice del costrutto for;
+	\item index step: realizzato dall'associazione \textit{step} tra la classe \textit{ForStatement} e la classe \hyperref[sec:modelstranslator:analysis:model_analysis:expression]{\textit{Expression}}. Rappresenta di quanto l'indice deve essere aumentato ad ogni iterazione del costrutto for;
+	\item index up to: realizzato dall'associazione \textit{upTo} tra la classe \textit{ForStatement} e la classe \hyperref[sec:modelstranslator:analysis:model_analysis:expression]{\textit{Expression}}. Rappresenta il valore che l'indice deve raggiungere per far terminare il ciclo for;
+	\item \hyperref[sec:modelstranslator:analysis:statements_analysis:statement]{statement}: realizzato dall'associazione tra la classe \textit{ForStatement} e la classe \hyperref[sec:modelstranslator:analysis:statements_analysis:statement]{\textit{Statement}}. Stabilisce l'\textbf{unico} statement del quale è composto il costrutto for.
+\end{itemize}

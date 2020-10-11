@@ -1,0 +1,12 @@
+%!TEX root = ../../../../root.tex
+
+Un'istanza della classe \textit{Operation} rappresenta un'operazione. Le componenti di rilevanza di questa classe sono:
+\begin{itemize}
+	\item nome: stabilisce il nome dell'operazione;
+	\item argomenti: realizzati tramite l'associazione tra \textit{Operation} e \textit{OperationArg}; rappresenta gli argomenti formali dell'operazione;
+\end{itemize}
+
+\textit{Operation} è una classe astratta utilizzata per la realizzazione delle classi più generali \hyperref[sec:modelstranslator:analysis:model_analysis:operation:builtinop]{\textit{BuiltInOp}} e \hyperref[sec:modelstranslator:analysis:model_analysis:operation:userdefop]{\textit{UserDefOp}}.
+
+\InputSection[sec:modelstranslator:analysis:model_analysis:operation:builtinop]{Classe BuiltInOp}{BuiltInOp/content.tex}
+\InputSection[sec:modelstranslator:analysis:model_analysis:operation:userdefop]{Classe UserDefOp}{UserDefOp/content.tex}

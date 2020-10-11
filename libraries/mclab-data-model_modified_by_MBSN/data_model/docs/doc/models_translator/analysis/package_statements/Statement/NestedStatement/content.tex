@@ -1,0 +1,13 @@
+%!TEX root = ../../../../../root.tex
+
+Un'istanza della classe \textit{NestedStatement} rappresenta uno statement che è composto da più statement dei quali è importante preservarne l'ordine. Le componenti di rilevanza di questa classe sono:
+\begin{itemize}
+	\item \hyperref[sec:modelstranslator:analysis:statements_analysis:statement]{statements}: rappresentati dall'associazione tra la classe \textit{NestedStatement} e la classe \textit{Statement}. Stabilisce gli statement di cui è composto il \textit{NestedStatement};
+\end{itemize}
+La classe \textit{NestedStatement} è una classe astratta data la possibilità di rappresentare diverse tipologie di statement che sono a loro volta composti da più statement; viene utilizzata per la realizzazione delle classi più specifiche \hyperref[sec:modelstranslator:analysis:statements_analysis:statement:nestedstatement:block]{\textit{Block}}, \hyperref[sec:modelstranslator:analysis:statements_analysis:statement:nestedstatement:forstatement]{\textit{ForStatement}}, \hyperref[sec:modelstranslator:analysis:statements_analysis:statement:nestedstatement:whilestatement]{\textit{WhileStatement}}, \hyperref[sec:modelstranslator:analysis:statements_analysis:statement:nestedstatement:ifstatement]{\textit{IfStatement}} e \hyperref[sec:modelstranslator:analysis:statements_analysis:statement:nestedstatement:whenstatement]{\textit{WhenStatement}}.
+
+\InputSection[sec:modelstranslator:analysis:statements_analysis:statement:nestedstatement:block]{Classe Block}{Block/content.tex}
+\InputSection[sec:modelstranslator:analysis:statements_analysis:statement:nestedstatement:whilestatement]{Classe WhileStatement}{WhileStatement/content.tex}
+\InputSection[sec:modelstranslator:analysis:statements_analysis:statement:nestedstatement:forstatement]{Classe ForStatement}{ForStatement/content.tex}
+\InputSection[sec:modelstranslator:analysis:statements_analysis:statement:nestedstatement:ifstatement]{Classe IfStatement}{IfStatement/content.tex}
+\InputSection[sec:modelstranslator:analysis:statements_analysis:statement:nestedstatement:whenstatement]{Classe WhenStatement}{WhenStatement/content.tex}

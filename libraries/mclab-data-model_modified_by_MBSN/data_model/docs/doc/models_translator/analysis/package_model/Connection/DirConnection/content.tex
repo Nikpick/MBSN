@@ -1,0 +1,11 @@
+%!TEX root = ../../../../../root.tex
+
+Nel caso di una connessione diretta è rilevante l'ordine in cui le variabili sono coinvolte nella connessione. Per cui viene fatta una distinzione tra la variabile in input coinvolta nella connessione e la variabile di output coinvolta nella connessione. Questo viene rappresentato attraverso due distinte associazioni tra la classe \textit{DirConnection} e la classe \textit{Variable}.
+
+La seguente classe presenta inoltre i seguenti vincoli esterni:
+\begin{enumerate}
+	\item \texttt{Variabili coinvolte nella stessa connection, non devono essere la stessa variabile} \\
+		  $\forall \ m,c,v,v' \ Module(m) \ \land \ modConn(m, c) \ \land \ DirConnection(c) \ \land \ connInVar(c, v)\ \land \ Variable(v) \ \land \ connOutVar(c, v') \ \land \ Variable(v') \ \Rightarrow \ v \neq v'$ \\
+	\item \texttt{Variabili coinvolte nella stessa connection, devono essere dello stesso tipo} \\
+		  $\forall \ m,c,v,v',t,t' \ Module(m) \ \land \ modConn(m, c) \ \land \ DirConnection(c) \ \land \ connInVar(c, v)\ \land \ Variable(v) \ \land \ typeExpr(t, v) \ \land \ Type(t) \ \land \ connOutVar(c, v') \ \land \ Variable(v') \ \Rightarrow \ typeExpr(t, v')$ \\
+\end{enumerate}

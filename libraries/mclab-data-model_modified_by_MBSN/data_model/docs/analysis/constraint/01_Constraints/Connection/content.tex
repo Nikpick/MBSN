@@ -1,0 +1,13 @@
+%!TEX root=../../root.tex
+
+\begin{enumerate}
+	\item \texttt{Variabili coinvolte in connection, devono essere definite nel modulo} \\
+		  \begin{itemize}
+		  	\item $\forall \ m,c,v \ Module(m) \ \land \ modConn(m, c) \ \land \ Connection(c) \ \land \ DirConnection(c) \ \land \ connInVar(c, v)\ \land \ Variable(v) \ \Rightarrow \ modVar(m, v)$ \\
+		  	\item $\forall \ m,c,v \ Module(m) \ \land \ modConn(m, c) \ \land \ Connection(c) \ \land \ DirConnection(c) \ \land \ connOutVar(c, v)\ \land \ Variable(v) \ \Rightarrow \ modVar(m, v)$ \\
+		  \end{itemize}
+	\item \texttt{Variabili coinvolte nella stessa connection, non devono essere la stessa variabile} \\
+		  $\forall \ m,c,v,v' \ Module(m) \ \land \ modConn(m, c) \ \land \ Connection(c) \ \land \ DirConnection(c) \ \land \ connInVar(c, v)\ \land \ Variable(v) \ \land \ connOutVar(c, v') \ \land \ Variable(v') \ \Rightarrow \ v \neq v'$ \\
+	\item \texttt{Variabili coinvolte nella stessa connection, devono essere dello stesso tipo} \\
+		  $\forall \ m,c,v,v',t,t' \ Module(m) \ \land \ modConn(m, c) \ \land \ Connection(c) \ \land \ DirConnection(c) \ \land \ connInVar(c, v)\ \land \ Variable(v) \ \land \ typeExpr(t, v) \ \land \ Type(t) \ \land \ connOutVar(c, v') \ \land \ Variable(v') \ \Rightarrow \ typeExpr(t, v')$ \\
+\end{enumerate}

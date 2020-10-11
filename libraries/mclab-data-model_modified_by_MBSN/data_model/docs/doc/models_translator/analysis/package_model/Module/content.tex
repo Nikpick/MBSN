@@ -1,0 +1,10 @@
+%!TEX root = ../../../../root.tex
+
+La classe \textit{Module} è il core di questo package, e del data model. Un'istanza di questa classe rappresenta il modello vero e proprio. \\
+Le componenti di rilevanza di un \textit{Module} sono le seguenti:
+\begin{itemize}
+	\item \hyperref[sec:modelstranslator:analysis:model_analysis:variable]{variabili}: realizzate tramite l'associazione tra \textit{Module} e \textit{Variable}. Ciascuna istanza rappresenta una variabile del modello;
+	\item \hyperref[sec:modelstranslator:analysis:model_analysis:operation:userdefop]{operazioni}: realizzate tramite l'associazione tra \textit{Module} e \textit{UserDefOp}. Ciascuna istanza rappresenta una funzione definita nel modello;
+	\item \hyperref[sec:modelstranslator:analysis:model_analysis:connection]{connessioni}: realizzate tramite l'associazione tra \textit{Module} e \textit{Connection}. Ciascuna istanza rappresenta una connessione appartente al modello;
+	\item \hyperref[sec:modelstranslator:analysis:model_analysis:event]{eventi}: realizzati tramite l'associazione tra \textit{Module} e \textit{Event}. Ciascuna istanza rappresenta un evento definito nel modello;
+\end{itemize}

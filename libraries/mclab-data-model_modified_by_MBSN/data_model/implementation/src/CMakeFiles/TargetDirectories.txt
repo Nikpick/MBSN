@@ -1,0 +1,3 @@
+/home/axsnxs/Scrivania/openmodelica/mclab-data-model-402da0bc7716/data_model/implementation/src/CMakeFiles/rebuild_cache.dir
+/home/axsnxs/Scrivania/openmodelica/mclab-data-model-402da0bc7716/data_model/implementation/src/CMakeFiles/custom.dir
+/home/axsnxs/Scrivania/openmodelica/mclab-data-model-402da0bc7716/data_model/implementation/src/CMakeFiles/edit_cache.dir

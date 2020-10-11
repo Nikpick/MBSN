@@ -1,0 +1,12 @@
+%!TEX root=../../root.tex
+
+\begin{enumerate}
+	\item \texttt{La condizione di uno statement when deve essere booleana} \\
+		  $\forall \ e,th,el,t \ Statement(s) \ \land \ Block(b) \ \land \ WhenStatement(s) \ \land \ Expression(e) \ \land \ whenCond(s, e, b) \ \Rightarrow \ \ typeExpr(Boolean, e)$ \\ 
+	\item \texttt{La condizione di uno statement while deve essere booleana} \\
+		  $\forall \ s,e,b \ Statement(s) \ \land \ WhileStatement(s) \ \land \ Expression(e) \ \land \ whileCond(s, e) \ \Rightarrow \ \ typeExpr(Boolean, e)$ \\
+	\item \texttt{La condizione di uno statement if deve essere booleana} \\
+		  $\forall \ s,e,b \ Statement(s) \ \land \ IfStatement(s) \ \land \ Expression(e) \ \land \ Block(b) \ \land \ ifCond(s, e, b) \ \Rightarrow \ \ typeExpr(Boolean, e)$ \\ 
+	% \item \texttt{I when-statement non possono essere annidati} \\
+	% 	  $\forall \ s,e,b \ Statement(s) \ \land \ WhenStatement(s) \ \land \ Expression(e) \ \land \ BlockSt(b) \ \land \ whenCond(s, e, b) \ \Rightarrow \ \nexists \ WhenStatement(s') \ \land \ s \neq s' \ \land \ blockStat(b, s')$ \\ 
+\end{enumerate}

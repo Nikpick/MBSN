@@ -1,0 +1,12 @@
+%!TEX root=../../root.tex
+
+\begin{enumerate}
+	\item \texttt{La condizione di un'espressione condizionale deve essere booleana} \\
+		  $\forall \ e,c,th \ Expression(e) \ \land \ ConditionalExpression(e) \ \land \ Expression(val) \ \land \ cond(c, e, th) \ \land \ Expression(c) \ \Rightarrow \ typeExpr(Boolean, c)$ \\
+	\item \texttt{Il tipo delle espressioni then ed else di un'espressione condizionale deve essere uguale al tipo dell'espressione condizionale} \\
+		  $\forall \ e,c,th,el,t \ Expression(e) \ \land \ ConditionalExpression(e) \ \land \ Expression(th) \ \land \ cond(c, e, th) \ \land \ Expression(c) \ \land \ else(e, el) \ \land \ Expression(el) \  \land typeExpr(t, e) \ \land \ Type(t) \ \Rightarrow \ typeExpr(t, th) \ \land \ typeExpr(t, el)$ \\
+	\item \texttt{Le espressioni coinvolgono solo variabili definite nel modello} \\
+		  $\forall \ e,v,m \ Model(m) \ \land \ Expression(e) \ \land \ modExpr(m, e) \ \land \ ExprVar(e) \ \land \ refers(e,v) \ \land \ Variable(v) \ \Rightarrow \ modVar(m, v)$ \\
+	\item \texttt{Le espressioni coinvolgono solo chiamate a funzioni che sono definite nel modello} \\
+		  $\forall \ e,v,m \ Model(m) \ \land \ Expression(e) \ \land \ modExpr(m, e) \ \land \ OperationCall(e) \ \land \ refers(e,op) \ \land \ Operation(op) \ \Rightarrow \ modOp(m, op)$ \\
+\end{enumerate}

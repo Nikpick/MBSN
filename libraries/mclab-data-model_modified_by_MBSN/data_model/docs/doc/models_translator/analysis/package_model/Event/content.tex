@@ -1,0 +1,19 @@
+%!TEX root = ../../../../root.tex
+
+Un'istanza della classe \textit{Event} rappresenta un evento. Un evento descrive quando e come avvengono dei cambiamenti di stato istantanei in un modello. \\
+Le componenti di rilevanza di questa classe sono:
+\begin{itemize}
+	\item trigger: rappresentato dall'omonima associazione tra la classe \textit{Event} e la classe \hyperref[sec:modelstranslator:analysis:model_analysis:expression]{\textit{Expression}}. Stabilisce quando l'evento occorre; viene definito attraverso un'espressione booleana, e nel momento in cui questa assume valore di verità \textit{"true"}, l'evento viene attivato;
+	\item priority: rappresentata dall'omonima associazione tra la classe \textit{Event} e la classe \hyperref[sec:modelstranslator:analysis:model_analysis:expression]{\textit{Expression}}. È possibile che più eventi si verificano simultaneamente, e per stabilire l'ordine di esecuzione di questi eventi viene utilizzata la priorità.
+	\item delay: rappresentato dall'omonima associazione tra la classe \textit{Event} e la classe \hyperref[sec:modelstranslator:analysis:model_analysis:expression]{\textit{Expression}}. Stabilisce dopo quanto tempo dall'attivazione dell'evento, quest'ultimo viene eseguito.
+	\item assegnamenti: rappresentati dall'associazione \textit{assignment} tra la classe \textit{Event} e la classe \hyperref[sec:modelstranslator:analysis:model_analysis:expression]{\textit{Expression}}. Stabiliscono il nuovo valore per le variabili coinvolte al verificarsi dell'evento.
+\end{itemize}
+La classe \textit{Event} presenta inoltre dei vincoli esterni:
+\begin{enumerate}
+	\item \texttt{La trigger condition di un evento deve essere di tipo booleana} \\
+		  $\forall \ m,e,c \ Module(m) \ \land \ modEvent(m, e) \ \land \ Event(e) \ \land \ trigger(e, c) \ \land Expression(c) \ \Rightarrow \ typeExpr(Boolean, c)$ \\
+	\item \texttt{La priority di un evento deve essere numerico} \\
+		  $\forall \ m,e,p \ Module(m) \ \land \ modEvent(m, e) \ \land \ Event(e) \ \land \ priority(e, p) \ \land Expression(p) \ \Rightarrow \ typeExpr(Integer, p) \ \lor \ typeExpr(Real, p)$ \\
+	\item \texttt{Il delay di un evento deve essere numerico} \\
+		  $\forall \ m,e,d \ Module(m) \ \land \ modEvent(m, e) \ \land \ Event(e) \ \land \ delay(e, d) \ \land Expression(d) \ \Rightarrow \ typeExpr(Integer, d) \ \lor \ typeExpr(Real, d)$ \\
+\end{enumerate}

@@ -1,0 +1,14 @@
+%!TEX root = ../../../../root.tex
+Proprio come \textit{Module} è la classe principale del package precedente, la classe \textit{Statement} è il core di questo package, e, come è intuibile dal nome, ogni sua istanza rappresenta uno statement. Le componenti di rilevanza di questa classe sono:
+\begin{itemize}
+	\item proprietario dello statement: realizzata dall'associatione tra la classe \textit{Statement} e la classe \hyperref[sec:modelstranslator:analysis:statements_analysis:statementowner]{\textit{StatementOwner}}. Rappresenta quindi a quale entità lo statement appartiene;
+\end{itemize}
+La classe \textit{Statement} è una classe astratta utilizzata per la rappresentazione delle classi \hyperref[sec:modelstranslator:analysis:statements_analysis:statement:break]{\textit{Break}}, \hyperref[sec:modelstranslator:analysis:statements_analysis:statement:return]{\textit{Return}}, \hyperref[sec:modelstranslator:analysis:statements_analysis:statement:expressionstatement]{\textit{ExpressionStatement}} e \hyperref[sec:modelstranslator:analysis:statements_analysis:statement:nestedstatement]{\textit{NestedStatement}}.
+
+\InputSection[sec:modelstranslator:analysis:statements_analysis:statement:return]{Classe Return}{Return/content.tex}
+\InputSection[sec:modelstranslator:analysis:statements_analysis:statement:break]{Classe Break}{Break/content.tex}
+\InputSection[sec:modelstranslator:analysis:statements_analysis:statement:expressionstatement]{Classe ExpressionStatement}{ExpressionStatement/content.tex}
+\InputSection[sec:modelstranslator:analysis:statements_analysis:statement:nestedstatement]{Classe NestedStatement}{NestedStatement/content.tex}
+
+
+

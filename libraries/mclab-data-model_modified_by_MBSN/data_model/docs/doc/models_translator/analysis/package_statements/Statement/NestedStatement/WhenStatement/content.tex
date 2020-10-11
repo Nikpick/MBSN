@@ -1,0 +1,12 @@
+%!TEX root = ../../../../../../root.tex
+
+Ciascuna istanza della classe \textit{WhenStatement} rappresenta il costrutto condizionale when; anche in questo scenario il numero di statement del costrutto when è più specifico del numero di statement della classe più generale \hyperref[sec:modelstranslator:analysis:statements_analysis:statement:nestedstatement]{\textit{NestedStatement}}, per cui all'associazione più generale è stato applicato lo stereotipo $\langle\langle override \rangle\rangle$. Le componenti di rilevanza di questa classe sono:
+\begin{itemize}
+	\item (condizione, statement): realizzate dalla classe associazione \textit{whenStatem} tra la classe \textit{WhenStatement} e la classe \hyperref[sec:modelstranslator:analysis:statements_analysis:statement]{\textit{Statement}}, dove la condizione è data dall'associazione tra \textit{whenStatem} e la classe \hyperref[sec:modelstranslator:analysis:model_analysis:expression]{\textit{Expression}}. Stabilisce gli statement di cui è composto il costrutto when, ognuno dei quali è associato a una condizione che determina quando lo statement deve essere eseguito;
+\end{itemize}
+
+La classe \textit{WhenStatement} presenta i seguenti vincoli esterni:
+\begin{enumerate}
+	\item \texttt{La condizione di uno statement when deve essere booleana} \\
+		  $\forall \ WhenStatement(w) \ \land \ Statement(s) \ \land \ WhenStatem(w, s, e) \ \land \ Expression(e) \ \Rightarrow \ \ typeExpr(Boolean, e)$ \\  
+\end{enumerate}

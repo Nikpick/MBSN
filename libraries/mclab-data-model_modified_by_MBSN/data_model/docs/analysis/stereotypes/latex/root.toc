@@ -1,0 +1,8 @@
+\babel@toc {english}{}
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}An association overridden}{2}{section.1}% 
+\contentsline {section}{\numberline {2}More associations overridden}{2}{section.2}% 
