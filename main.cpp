@@ -16,8 +16,8 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    auto modello = read_and_parse("./out.json");
-    std::string data_error = "Data not found, replaced";
+    auto modello = read_and_parse("./out.json"); // partendo dal json, otteniamo il dizionario corrispondente
+    std::string data_error = "Data not found, replaced"; // stringa di default in caso di accesso ad una chiave inesistente
     
     for (auto const& id : modello["dae"].getMemberNames()) {
         std::cout << id << std::endl;
