@@ -8,6 +8,7 @@ il link alla libreria.
 */
 
 #include "cpp/json_reader.cpp"
+// #include "libraries/mclab/data_model/implementation/src/parser/Parser.h"
 #include <fstream>
 #include <iostream>
 #include <stdio.h>
@@ -23,6 +24,8 @@ int main(int argc, char const *argv[])
         std::cout << id << std::endl;
     }
 
+    // Parser::~Parser("./test/TestModel.MyModel.xml");
+    auto parser = new Parser("./test/TestModel.MyModel.xml");
     //std::cout << modello.get("dae",  data_error).get("variables",  data_error) << std::endl;
 
     return 0;

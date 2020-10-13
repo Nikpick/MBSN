@@ -1,0 +1,11 @@
+loadModel(Modelica);
+
+loadFile("package.mo"); 
+loadFile("MyModel.mo"); 
+
+loadFile("MyClass.mo");
+loadFile("Constants.mo"); 
+loadFile("Functions.mo"); 
+loadFile("Parameters.mo"); 
+
+dumpXMLDAE(TestModel.MyModel, translationLevel="backEnd")//,addMathMLCode=true);getErrorString();
