@@ -35,6 +35,7 @@ Configurazione cronologica:
 
 - creata una cartella vcpkg nel progetto, fatto git clone del pacchetto omonimo e installato da bash
 - sudo apt install libxml2
+- installare libxml++ ds http://ftp.gnome.org/pub/GNOME/sources/libxml++/4.9/
 - verifica installazione glib e glibmm: pkg-config glib-2.0 --modversion && pkg-config glibmm-2.4 --modversion
 - sudo pip3 install python-libsbml
 
