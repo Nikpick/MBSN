@@ -6,21 +6,43 @@ WIP
 
 Configurazione progetto IA.
 
-Configurazione VM: Linux Ubuntu 64bit LTS 20.04
-Preparazione:
-install visual studio code con estensioni Cmake Tools e C/C++ Intellisense
-sudo apt-get install && apt-get update && apt-get upgrade
-install apt install
-install g++ e gcc
-install cmake 3.16 in su
-install python3
-install pip
-pip install xmltodict
-sudo apt install openmodelica
-install libxml++-3.0
-install glibmm
-install glib
-install libsbml
+Configurazione VM in Virtualbox:
+Distro: Linux Ubuntu 64bit LTS 20.04
+User:   vbox
+Pw:     2020
+
+Configurazione cronologica:
+applicati tutti gli aggiornamenti da GUI e da riga di comando
+
+sudo apt install software-properties-common apt-transport-https wget
+
+for deb in deb deb-src; do echo "$deb http://build.openmodelica.org/apt `lsb_release -cs` stable"; done | sudo tee /etc/apt/sources.list.d/openmodelica.list
+
+wget -q http://build.openmodelica.org/apt/openmodelica.asc -O- | sudo apt-key add - 
+
+sudo apt update
+sudo apt install
+                  gcc
+                  make
+                  cmake
+                  git
+                  openmodelica
+                  zlib1g-dev libxml2-dev
+                  glibmm
+                  glib
+                  libsbml
+                  python3-pip
+                  
+pip3 install xmltodict
+sudo cpan install XML::LibXML
+
+
+installazione di visual studio code (VSC)
+installate estensioni di VSC:
+Cmake Tools
+C/C++ Intellisense
+ninja-build
+
 
 
 
