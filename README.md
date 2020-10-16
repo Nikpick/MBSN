@@ -38,7 +38,7 @@ Configurazione cronologica:
                   libxml++
                   glibmm
                   glib
-                  libsbml
+- sudo pip3 install python-libsbml
 
 Installazione di visual studio code (VSC)
 - installate estensioni di VSC:
