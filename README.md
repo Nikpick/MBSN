@@ -36,7 +36,6 @@ Configurazione cronologica:
 - creata una cartella vcpkg nel progetto, fatto git clone del pacchetto omonimo e installato da bash
 - sudo apt install
                   libxml2
-                  glibmm
                   glib
 - sudo pip3 install python-libsbml
 
