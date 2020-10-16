@@ -28,21 +28,23 @@ sudo apt install
                   git
                   openmodelica
                   zlib1g-dev libxml2-dev
-                  glibmm
-                  glib
-                  libsbml
-                  python3-pip
                   
 pip3 install xmltodict
 sudo cpan install XML::LibXML
 
+sudo apt install
+                  libxml++
+                  glibmm
+                  glib
+                  libsbml
+                  python3-pip
 
 installazione di visual studio code (VSC)
 installate estensioni di VSC:
 Cmake Tools
 C/C++ Intellisense
 ninja-build
-
+copiata la repository tramite git
 
 
 
