@@ -40,12 +40,12 @@ Configurazione cronologica:
                   glib
                   libsbml
 
-installazione di visual studio code (VSC)
--installate estensioni di VSC:
--Cmake Tools
--C/C++ Intellisense
--ninja-build
--copiata la repository tramite git
+Installazione di visual studio code (VSC)
+- installate estensioni di VSC:
+- Cmake Tools
+- C/C++ Intellisense
+- ninja-build
+- copiata la repository tramite git
 
 
 
