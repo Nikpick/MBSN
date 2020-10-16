@@ -34,9 +34,7 @@ Configurazione cronologica:
 - sudo cpan install XML::LibXML
 
 - creata una cartella vcpkg nel progetto, fatto git clone del pacchetto omonimo e installato da bash
-- sudo apt install
-                  libxml2
-                  glib
+- sudo apt install libxml2
 - sudo pip3 install python-libsbml
 
 Installazione di visual studio code (VSC)
