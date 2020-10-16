@@ -42,6 +42,11 @@ Configurazione cronologica:
 - sudo apt update
 - sudo apt install libsbml5
 
+
+WIP MA CANDIDATA A RELEASE
+- installare via vcpkg tutti i 4 package
+
+
 Installazione di visual studio code (VSC)
 - installate estensioni di VSC:
 - Cmake Tools
