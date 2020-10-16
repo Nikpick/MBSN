@@ -37,7 +37,10 @@ Configurazione cronologica:
 - sudo apt install libxml2
 - installare libxml++ ds http://ftp.gnome.org/pub/GNOME/sources/libxml++/4.9/
 - verifica installazione glib e glibmm: pkg-config glib-2.0 --modversion && pkg-config glibmm-2.4 --modversion
-- sudo pip3 install python-libsbml
+- echo 'deb http://download.opensuse.org/repositories/home:/fbergman:/libsbml/xUbuntu_18.10/ /' | sudo tee /etc/apt/sources.list.d/home:fbergman:libsbml.list
+- curl -fsSL https://download.opensuse.org/repositories/home:fbergman:libsbml/xUbuntu_18.10/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home:fbergman:libsbml.gpg > /dev/null
+- sudo apt update
+- sudo apt install libsbml5
 
 Installazione di visual studio code (VSC)
 - installate estensioni di VSC:
