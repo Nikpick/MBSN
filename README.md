@@ -74,6 +74,7 @@ PER SBML (LIBSBML)
 - tar -xvf libSBML_5.18.0.tar.gz
 - cd libSBML_5.18.0/usr/lib64
 - sudo cp -R ./ /usr/lib
+- cd ..
 - sudo rm -r libSBML-5.18.0-Linux-x64-binaries-ubuntu
 - sudo rm -r libSBML-5.18.0-Linux-x64-binaries-ubuntu.tar.gz
 
