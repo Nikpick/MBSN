@@ -8,13 +8,13 @@ Configurazione Distro Linux (in Windows tramite WSL2):
 - Distro: Linux Ubuntu 64bit LTS 20.04
 
 
-Configurazione cronologica:
+
+Configurazione cronologica & requisiti:
 - sudo apt install software-properties-common apt-transport-https wget
 
 - for deb in deb deb-src; do echo "$deb http://build.openmodelica.org/apt `lsb_release -cs` stable"; done | sudo tee /etc/apt/sources.list.d/openmodelica.list
 
 - wget -q http://build.openmodelica.org/apt/openmodelica.asc -O- | sudo apt-key add - 
-
 
 - sudo apt install
                   gcc
@@ -31,16 +31,25 @@ Configurazione cronologica:
 - applicati tutti gli aggiornamenti (update && upgrade && install)
 
 - sudo apt install openmodelica
+
 - pip3 install xmltodict
+
 - sudo cpan install XML::LibXML
 
 - creata una cartella vcpkg nel progetto, fatto git clone del pacchetto omonimo e installato da bash
+
 - sudo apt install libxml2
+
 - installare libxml++ ds http://ftp.gnome.org/pub/GNOME/sources/libxml++/4.9/
+
 - verifica installazione glib e glibmm: pkg-config glib-2.0 --modversion && pkg-config glibmm-2.4 --modversion
+
 - echo 'deb http://download.opensuse.org/repositories/home:/fbergman:/libsbml/xUbuntu_18.10/ /' | sudo tee /etc/apt/sources.list.d/home:fbergman:libsbml.list
+
 - curl -fsSL https://download.opensuse.org/repositories/home:fbergman:libsbml/xUbuntu_18.10/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home:fbergman:libsbml.gpg > /dev/null
+
 - sudo apt update
+
 - sudo apt install libsbml5
 
 
