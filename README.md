@@ -36,17 +36,40 @@ Configurazione cronologica & requisiti:
 
 - DA QUESTO PUNTO IN POI WIP
 
-- for PKG in `apt-cache search "omlib-.*" | cut -d" " -f1`; do sudo apt-get install -y "$PKG"; done # Installs optional Modelica libraries (most have not been tested with OpenModelica)
+- wget https://download.gnome.org/sources/libxml++/4.9/libxml++-4.9.1.tar.xz
+- tar -xvf libxml++-4.9.1.tar.xz
+- cd libxml++-4.9.1
+- sudo ./configure --prefix=/usr
+- sudo make
+- sudo make install
 
-- sudo cpan install XML::LibXML
+- wget https://download.gnome.org/sources/libxml++/4.9/libxml++-4.9.1.tar.xz
+- tar -xvf libxml++-4.9.1.tar.xz
+- cd libxml++-4.9.1
+- sudo ./configure --prefix=/usr
+- sudo make
+- sudo make install
 
-- creata una cartella vcpkg nel progetto, fatto git clone del pacchetto omonimo e installato da bash
+- wget https://download.gnome.org/sources/libxml++/4.9/libxml++-4.9.1.tar.xz
+- tar -xvf libxml++-4.9.1.tar.xz
+- cd libxml++-4.9.1
+- sudo ./configure --prefix=/usr
+- sudo make
+- sudo make install
 
-- sudo apt install libxml2
+- wget https://download.gnome.org/sources/libxml++/4.9/libxml++-4.9.1.tar.xz
+- tar -xvf libxml++-4.9.1.tar.xz
+- cd libxml++-4.9.1
+- sudo ./configure --prefix=/usr
+- sudo make
+- sudo make install
 
-- installare libxml++ ds http://ftp.gnome.org/pub/GNOME/sources/libxml++/4.9/
 
-- verifica installazione glib e glibmm: pkg-config glib-2.0 --modversion && pkg-config glibmm-2.4 --modversion
+- verifica installazione glib e glibmm:
+- pkg-config glib-2.0 --modversion
+- pkg-config libxml++-5.0 --modversion
+- pkg-config glibmm-2.4 --modversion
+- pkg-config glibmm-2.4 --modversion
 
 - echo 'deb http://download.opensuse.org/repositories/home:/fbergman:/libsbml/xUbuntu_18.10/ /' | sudo tee /etc/apt/sources.list.d/home:fbergman:libsbml.list
 
