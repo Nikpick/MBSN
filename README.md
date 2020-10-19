@@ -36,6 +36,7 @@ Configurazione cronologica & requisiti:
 
 - DA QUESTO PUNTO IN POI WIP
 
+- PER LIBXML++ 4.9.1
 - wget https://download.gnome.org/sources/libxml++/4.9/libxml++-4.9.1.tar.xz
 - tar -xvf libxml++-4.9.1.tar.xz
 - cd libxml++-4.9.1
@@ -43,6 +44,7 @@ Configurazione cronologica & requisiti:
 - sudo make
 - sudo make install
 
+- PER GLIB
 - wget https://download.gnome.org/sources/libxml++/4.9/libxml++-4.9.1.tar.xz
 - tar -xvf libxml++-4.9.1.tar.xz
 - cd libxml++-4.9.1
@@ -50,6 +52,7 @@ Configurazione cronologica & requisiti:
 - sudo make
 - sudo make install
 
+- PER GLIBMM
 - wget https://download.gnome.org/sources/libxml++/4.9/libxml++-4.9.1.tar.xz
 - tar -xvf libxml++-4.9.1.tar.xz
 - cd libxml++-4.9.1
@@ -57,6 +60,7 @@ Configurazione cronologica & requisiti:
 - sudo make
 - sudo make install
 
+- PER SBML (LIBSBML)
 - wget https://download.gnome.org/sources/libxml++/4.9/libxml++-4.9.1.tar.xz
 - tar -xvf libxml++-4.9.1.tar.xz
 - cd libxml++-4.9.1
