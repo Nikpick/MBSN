@@ -34,6 +34,8 @@ Configurazione cronologica & requisiti:
 
 - pip3 install xmltodict
 
+- DA QUESTO PUNTO IN POI WIP
+
 - sudo cpan install XML::LibXML
 
 - creata una cartella vcpkg nel progetto, fatto git clone del pacchetto omonimo e installato da bash
