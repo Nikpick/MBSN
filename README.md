@@ -8,43 +8,34 @@ Configurazione Distro Linux (in Windows tramite WSL2):
 - Distro: Linux Ubuntu 64bit LTS 20.04
 
 
-
 Configurazione cronologica & requisiti:
 - sudo apt install software-properties-common apt-transport-https wget
-
 - for deb in deb deb-src; do echo "$deb http://build.openmodelica.org/apt `lsb_release -cs` stable"; done | sudo tee /etc/apt/sources.list.d/openmodelica.list
-
 - wget -q http://build.openmodelica.org/apt/openmodelica.asc -O- | sudo apt-key add - 
-
 - sudo apt update
-
-- sudo apt install
-                  gcc
-                  make
-                  cmake
-                  git
-                  curl
-                  unzip
-                  tar
-                  zlib1g-dev libxml2-dev
-                  python3-pip
-                  
-
-- applicati tutti gli aggiornamenti (update && upgrade && install)
-
+- sudo apt install gcc make cmake git curl unzip tar zlib1g-dev libxml2-dev python3-pip pkg-config     
+- sudo apt update && sudo apt full-upgrade
 - sudo apt install openmodelica
-
 - pip3 install xmltodict
 
-- DA QUESTO PUNTO IN POI WIP
 
-- PER LIBXML++ 4.9.1
+PER LIBXML++ 4.9.1
 - wget https://download.gnome.org/sources/libxml++/4.9/libxml++-4.9.1.tar.xz
 - tar -xvf libxml++-4.9.1.tar.xz
 - cd libxml++-4.9.1
+- sudo ./configure
 - sudo ./configure --prefix=/usr
 - sudo make
 - sudo make install
+- cd ..
+- sudo rm -r libxml++-4.9.1
+- sudo rm -r libxml++-4.9.1.tar.xz
+
+
+WIP __
+      |
+      v
+
 
 - PER GLIB
 - wget https://download.gnome.org/sources/libxml++/4.9/libxml++-4.9.1.tar.xz
