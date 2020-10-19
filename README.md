@@ -72,10 +72,10 @@ PER GLIBMM
 PER SBML (LIBSBML)
 - wget https://sourceforge.net/projects/sbml/files/libsbml/5.18.0/stable/R%20interface/libSBML_5.18.0.tar.gz/download
 - tar -xvf libSBML_5.18.0.tar.gz
-- cd libSBML_5.18.0
-- sudo ./configure --prefix=/usr
-- sudo make
-- sudo make install
+- cd libSBML_5.18.0/usr/lib64
+- sudo cp -R ./ /usr/lib
+- sudo rm -r libSBML-5.18.0-Linux-x64-binaries-ubuntu
+- sudo rm -r libSBML-5.18.0-Linux-x64-binaries-ubuntu.tar.gz
 
 
 - verifica installazione glib e glibmm:
@@ -83,18 +83,6 @@ PER SBML (LIBSBML)
 - pkg-config libxml++-5.0 --modversion
 - pkg-config glibmm-2.4 --modversion
 - pkg-config glibmm-2.4 --modversion
-
-- echo 'deb http://download.opensuse.org/repositories/home:/fbergman:/libsbml/xUbuntu_18.10/ /' | sudo tee /etc/apt/sources.list.d/home:fbergman:libsbml.list
-
-- curl -fsSL https://download.opensuse.org/repositories/home:fbergman:libsbml/xUbuntu_18.10/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home:fbergman:libsbml.gpg > /dev/null
-
-- sudo apt update
-
-- sudo apt install libsbml5
-
-
-WIP MA CANDIDATA A RELEASE
-- installare via vcpkg tutti i 4 package
 
 
 Installazione di visual studio code (VSC)
@@ -104,7 +92,6 @@ Installazione di visual studio code (VSC)
 - ninja-build
 - Remote-Container (Docker)
 - copiata la repository tramite git
-
 
 
 - Agli script Python va passato come argomento il path del modello .mo ma va dato il package o il modello!
