@@ -16,6 +16,8 @@ Configurazione cronologica & requisiti:
 
 - wget -q http://build.openmodelica.org/apt/openmodelica.asc -O- | sudo apt-key add - 
 
+- sudo apt update
+
 - sudo apt install
                   gcc
                   make
