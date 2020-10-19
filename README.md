@@ -13,7 +13,7 @@ Configurazione cronologica & requisiti:
 - for deb in deb deb-src; do echo "$deb http://build.openmodelica.org/apt `lsb_release -cs` stable"; done | sudo tee /etc/apt/sources.list.d/openmodelica.list
 - wget -q http://build.openmodelica.org/apt/openmodelica.asc -O- | sudo apt-key add - 
 - sudo apt update
-- sudo apt install gcc make cmake git curl unzip tar zlib1g-dev libxml2-dev python3-pip pkg-config     
+- sudo apt install gcc make cmake git curl unzip tar zlib1g-dev libxml2-dev python3-pip pkg-config meson    
 - sudo apt update && sudo apt full-upgrade
 - sudo apt install openmodelica
 - pip3 install xmltodict
