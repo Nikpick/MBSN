@@ -1,23 +1,21 @@
 # MBSN
-AI Project
+AI Project - WIP Guide
 
-WIP
+Il progetto è stato configurato su una Docker image, di cui è stato effettuato l'upload su GitHub al seguente link: (WIP)
 
-Configurazione VM in Virtualbox
+
+Configurazione Distro Linux (in Windows tramite WSL2):
 - Distro: Linux Ubuntu 64bit LTS 20.04
-- User:   vbox
-- Pw:     2020
+
 
 Configurazione cronologica:
-- applicati tutti gli aggiornamenti da GUI e da riga di comando
-
 - sudo apt install software-properties-common apt-transport-https wget
 
 - for deb in deb deb-src; do echo "$deb http://build.openmodelica.org/apt `lsb_release -cs` stable"; done | sudo tee /etc/apt/sources.list.d/openmodelica.list
 
 - wget -q http://build.openmodelica.org/apt/openmodelica.asc -O- | sudo apt-key add - 
 
-- sudo apt update
+
 - sudo apt install
                   gcc
                   make
@@ -26,10 +24,13 @@ Configurazione cronologica:
                   curl
                   unzip
                   tar
-                  openmodelica
                   zlib1g-dev libxml2-dev
                   python3-pip
                   
+
+- applicati tutti gli aggiornamenti (update && upgrade && install)
+
+- sudo apt install openmodelica
 - pip3 install xmltodict
 - sudo cpan install XML::LibXML
 
@@ -52,11 +53,12 @@ Installazione di visual studio code (VSC)
 - Cmake Tools
 - C/C++ Intellisense
 - ninja-build
+- Remote-Container (Docker)
 - copiata la repository tramite git
 
 
 
--Agli script Python va passato come argomento il path del modello .mo ma va dato il package o il modello!
+- Agli script Python va passato come argomento il path del modello .mo ma va dato il package o il modello!
 
 1 – creare dizionario in c++ da json
 2 – Usare GPUOde
