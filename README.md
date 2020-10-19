@@ -36,6 +36,8 @@ Configurazione cronologica & requisiti:
 
 - DA QUESTO PUNTO IN POI WIP
 
+- for PKG in `apt-cache search "omlib-.*" | cut -d" " -f1`; do sudo apt-get install -y "$PKG"; done # Installs optional Modelica libraries (most have not been tested with OpenModelica)
+
 - sudo cpan install XML::LibXML
 
 - creata una cartella vcpkg nel progetto, fatto git clone del pacchetto omonimo e installato da bash
