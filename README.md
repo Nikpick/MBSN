@@ -1,7 +1,7 @@
 # MBSN
 AI Project - WIP Guide
 
-Il progetto è stato configurato su una Docker image, di cui è stato effettuato l'upload su GitHub al seguente link: (WIP)
+Il progetto è stato configurato su una Docker image, di cui è stato effettuato l'upload su Docker Hub al seguente link: (WIP)
 
 
 Configurazione Distro Linux (in Windows tramite WSL2):
@@ -95,7 +95,8 @@ Installazione di visual studio code (VSC)
 - copiata la repository tramite git
 
 
-- Agli script Python va passato come argomento il path del modello .mo ma va dato il package o il modello!
+TO DO LIST:
+– Usare GPUOde
 
-1 – creare dizionario in c++ da json
-2 – Usare GPUOde
+NOTE:
+- Agli script Python va passato come argomento il path del modello .mo ma va dato il package o il modello
