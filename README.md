@@ -78,11 +78,11 @@ PER SBML (LIBSBML)
 - sudo rm -r libSBML-5.18.0-Linux-x64-binaries-ubuntu.tar.gz
 
 
-- verifica installazione glib e glibmm:
+Verifica installazioni:
 - pkg-config glib-2.0 --modversion
 - pkg-config libxml++-5.0 --modversion
 - pkg-config glibmm-2.4 --modversion
-- pkg-config glibmm-2.4 --modversion
+- pkg-config libsbml --modversion
 
 
 Installazione di visual studio code (VSC)
