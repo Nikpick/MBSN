@@ -1,0 +1,3 @@
+[submodule "mclab-data-model"]
+	path = mclab-data-model
+	url = https://github.com/Silverio-Man/mclab-data-model.git
