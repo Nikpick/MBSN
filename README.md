@@ -16,6 +16,7 @@ Configurazione cronologica & requisiti:
 - sudo apt install gcc make cmake git curl unzip tar zlib1g-dev libxml2-dev python3-pip pkg-config meson    
 - sudo apt update && sudo apt full-upgrade
 - sudo apt install openmodelica
+- for PKG in `apt-cache search "omlib-.*" | cut -d" " -f1`; do sudo apt-get install -y "$PKG"; done # Installs optional Modelica libraries (most have not been tested with OpenModelica)
 - pip3 install xmltodict
 
 
