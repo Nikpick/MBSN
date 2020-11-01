@@ -12,9 +12,12 @@ include(CPack)
 
 set(EXTERNAL_LIB_HEADERS libraries/mclab-data-model/headers)
 set(EXTERNAL_LIB_JSONCPP libraries/jsoncpp)
+set(EXTERNAL_LIB_CPP cpp)
 
 target_include_directories(
     MBSN PRIVATE
+
     ${EXTERNAL_LIB_HEADERS}
     ${EXTERNAL_LIB_JSONCPP}
+    ${EXTERNAL_LIB_CPP}
 )
