@@ -20,6 +20,12 @@ int main(int argc, char const *argv[])
             printf("Singolo valore per --%s--:\n", member.c_str());            
             printf("%s\n\n", v2.c_str());
             
+            auto vec2 = val.getMemberNames();
+            for (auto & innerV : vec2) {
+                auto v3 = val[innerV.c_str()].toStyledString();
+                printf("Singolo valore per valore --%s--:\n", innerV.c_str());            
+                printf("%s\n\n", v3.c_str());
+            }
         }
     }
 
