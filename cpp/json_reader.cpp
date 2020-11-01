@@ -1,6 +1,5 @@
 
-#include "../libraries/jsoncpp/dist/json/json.h"
-#include "../libraries/jsoncpp/dist/jsoncpp.cpp"
+#include "../libraries/jsoncpp/json/json.h"
 #include <fstream>
 #include <iostream>
 #include <stdio.h>
