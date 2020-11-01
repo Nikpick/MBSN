@@ -10,8 +10,9 @@ set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)
 
-set(EXTERNAL_LIB_HEADERS mclab-data-model/headers)
+set(EXTERNAL_LIB_HEADERS libraries/mclab-data-model/headers)
 set(EXTERNAL_LIB_JSONCPP libraries/jsoncpp)
+
 target_include_directories(
     MBSN PRIVATE
     ${EXTERNAL_LIB_HEADERS}
