@@ -32,4 +32,9 @@ omc.execute('dumpXMLDAE(' + className + ', translationLevel="backEnd", addMathML
 # il json viene infine salvato nella dir corrente
 with open(className + '.xml') as fd:
     myDict = xmltodict.parse(fd.read())
-    json.dump(myDict, open("../out.json","w"), indent = "\t")
+    json.dump(myDict, open("out.json","w"), indent = "\t")
+
+# rimozione del file .xml
+os.remove(className + '.xml')
+
+print("Modelica to json conversion:\tDone!")

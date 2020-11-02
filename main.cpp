@@ -5,11 +5,23 @@
 #include <json/json-forwards.h>
 #include <json_reader.cpp>
 
+#include <fstream>
+
 int main(int argc, char const *argv[])
 {
-    auto jvalue = json_reader("../out.json");
+    // Lettura del json e conversione in Json::Value
+    Json::Value json;
+    std::ifstream config_doc("./out.json", std::ifstream::binary);
+    config_doc >> json;
+    // Metodo alternativo:
+    // auto json = json_reader("./out.json");
+
+    // Test di accesso alle componenti
+    auto test = json["dae"]["variables"].toStyledString();
+    cout << "Test 'json[\"dae\"][\"variables\"]':\n" << test << "\nFine test." << endl;
+
+    /*
     auto vec = jvalue.getMemberNames();
-    
     for (auto &member : vec) {
         auto values = jvalue[member.c_str()].toStyledString();
         auto v1 = values.c_str();
@@ -28,11 +40,6 @@ int main(int argc, char const *argv[])
             }
         }
     }
-
-
-
-
-    /*
     // FOR TESTING PURPOSES
     auto strJvalue = jvalue.toStyledString();
     auto str = strJvalue.c_str();

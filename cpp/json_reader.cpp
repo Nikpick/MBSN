@@ -35,7 +35,7 @@ Json::Value json_reader(string path) {
         std::cout << "Failed to parse the JSON, errors:" << std::endl;
         std::cout << errors << std::endl;
     } else {
-        printf("\nsuccess\n");
+        printf("\nJson_parser:\tSuccess\n");
     }
 
     return modello;
