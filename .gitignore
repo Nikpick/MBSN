@@ -1,2 +1,6 @@
+# Ignored directories:
 /build/
 /build-*/
+
+# Ignored files:
+out.json
