@@ -5,7 +5,7 @@ Il progetto è stato configurato su una Docker image, di cui è stato effettuato
 
 
 Configurazione Distro Linux (in Windows tramite WSL2):
-- Distro: Linux Ubuntu 64bit LTS 20.04
+- Distro: Linux Ubuntu 64bit LTS 20.10
 
 
 Configurazione cronologica & requisiti:
