@@ -13,7 +13,7 @@ include(CPack)
 set(EXTERNAL_LIB_HEADERS libraries/mclab-data-model/headers)
 set(EXTERNAL_LIB_JSONCPP libraries/jsoncpp)
 set(EXTERNAL_LIB_CPP cpp)
-set(EXTERNAL_LIBX /usr/include/libxml++)
+set(EXTERNAL_LIB_RAPIDXML libraries/rapidxml-1.13)
 
 
 target_include_directories(
@@ -22,6 +22,5 @@ target_include_directories(
     ${EXTERNAL_LIB_HEADERS}
     ${EXTERNAL_LIB_JSONCPP}
     ${EXTERNAL_LIB_CPP}
-    ${EXTERNAL_LIBX}
-    
+    ${EXTERNAL_LIB_RAPIDXML}
 )

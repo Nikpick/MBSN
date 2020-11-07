@@ -14,6 +14,10 @@ for arg in sys.argv[1:]:
 # os.system("echo " + command)
 os.system(command)
 
+if(len(sys.argv) > 3): # se viene passato anche il nome del package, xmlFilename = PackageName.ClassName.xml
+    xmlFilename = sys.argv[3] + '.' + sys.argv[2] + '.xml'
+else: # altrimenti xmlFilename = ClassName.xml
+    xmlFilename = sys.argv[2] + '.xml'
 # Popolazione del mclab-data-model
-os.system('./build/MBSN')
+os.system('./build/MBSN ' + xmlFilename)
 
