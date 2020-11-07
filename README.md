@@ -10,11 +10,11 @@ Configurazione Distro Linux (in Windows tramite WSL2):
 
 Configurazione cronologica & requisiti:
 - sudo apt install software-properties-common apt-transport-https wget
+- sudo apt update
+- sudo apt install gcc make cmake git curl unzip tar zlib1g-dev libxml2-dev python3-pip pkg-config meson 
+- sudo apt update && sudo apt full-upgrade
 - for deb in deb deb-src; do echo "$deb http://build.openmodelica.org/apt `lsb_release -cs` stable"; done | sudo tee /etc/apt/sources.list.d/openmodelica.list
 - wget -q http://build.openmodelica.org/apt/openmodelica.asc -O- | sudo apt-key add - 
-- sudo apt update
-- sudo apt install gcc make cmake git curl unzip tar zlib1g-dev libxml2-dev python3-pip pkg-config meson    
-- sudo apt update && sudo apt full-upgrade
 - sudo apt install openmodelica
 - for PKG in `apt-cache search "omlib-.*" | cut -d" " -f1`; do sudo apt-get install -y "$PKG"; done # Installs optional Modelica libraries (most have not been tested with OpenModelica)
 - pip3 install xmltodict
