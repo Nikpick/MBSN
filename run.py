@@ -8,7 +8,7 @@ import os
 import sys
 
 # Parsing: modelica -> xml -> json
-command = 'python3 python/modelica_to_json.py'
+command = 'python3 python/modelica_to_xml.py'
 for arg in sys.argv[1:]:
     command += ' ' + arg
 # os.system("echo " + command)
