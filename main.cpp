@@ -30,5 +30,7 @@ int main(int argc, char const *argv[])
     auto firstNodeName = doc.first_node("dae");
     cout << "First node name: " << firstNodeName->name() << endl;
 
+    auto mod = std::make_shared<Modeling::Module>("foo");
+
     return 0;
 }
