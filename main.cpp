@@ -1,4 +1,5 @@
 
+
 #include <iostream>
 #include <fstream>
 #include <string.h>
@@ -7,12 +8,17 @@
 // // #include <json/json-forwards.h>
 // // #include <json_reader.cpp>
 #include <rapidxml.hpp>
+#include "parser.cpp"
 
 using namespace std;
 using namespace rapidxml;
+using namespace Modeling;
+
+
 
 int main(int argc, char const *argv[])
 {
+    // Parsing dell'xml in dizionario
     ifstream xml(argv[1]);
     string xmlAsString, line;
 
@@ -26,11 +32,15 @@ int main(int argc, char const *argv[])
 
     xml_document<> doc;
     doc.parse<0>(xmlAsCharArray);
+    // Fine del parsing: la variabile doc contiene il dizionario
 
-    auto firstNodeName = doc.first_node("dae");
-    cout << "First node name: " << firstNodeName->name() << endl;
+    //cout << "First node name: " << firstNodeName->name() << endl;
 
-    auto mod = std::make_shared<Modeling::Module>("foo");
+    // auto mod = std::make_shared<Modeling::Module>("foo");
+    auto module = Module("ciao");
+    auto root = doc.first_node("dae");
 
+    parser(&module, &doc, root);
+    
     return 0;
 }
