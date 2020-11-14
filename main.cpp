@@ -36,12 +36,12 @@ int main(int argc, char const *argv[])
 
 
     // auto mod = std::make_shared<Modeling::Module>("foo");
-    auto module = Module("system");
+    auto module = make_shared<Module>("system");
     auto root = doc.first_node("dae");
 
     cout << "First node name: " << root->name() << endl;
     
-    parser(&module, root);
+    parser(module, root);
     
     return 0;
 }

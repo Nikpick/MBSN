@@ -5,53 +5,68 @@
 #include <string.h>
 #include <iostream>
 #include <fstream>
+#include <Parameter.h>
+#include <Species.h>
+#include <BaseType.h>
+#include <Unit.h>
+#include <memory>
 
 using namespace Modeling;
 using namespace rapidxml;
 using namespace std;
 
 //GETTERS METHODS
-void getEquations(Module* module, xml_document<>* doc, xml_node<>* node) {
+void getEquations(shared_ptr<Module> module, xml_document<>* doc, xml_node<>* node) {
     cout << node->name() << endl;
 }
 
-void getFunctionss(Module* module, xml_document<>* doc, xml_node<>* node) {
+void getFunctionss(shared_ptr<Module> module, xml_document<>* doc, xml_node<>* node) {
     cout << node->name() << endl;
 }
 
-void getVariables(Module* module, xml_document<>* doc, xml_node<>* node) {
+void getVariables(shared_ptr<Module> module, xml_document<>* doc, xml_node<>* node) {
     cout << node->name() << endl;
 }
 
 //SETTERS METHODS
 
-void setEquations(Module* module, xml_node<>* node) {
+void setEquations(shared_ptr<Module> module, xml_node<>* node) {
     
 }
 
-void setFunctions(Module* module, xml_node<>* node) {
+void setFunctions(shared_ptr<Module> module, xml_node<>* node) {
     
 }
 
-void setAliasVariable(Module* module, xml_node<>* node) {
+void setAliasVariable(shared_ptr<Module> module, xml_node<>* node) {
     cout << node->first_attribute("name")->value() << endl;
 }
 
-void setOrderedVariable(Module* module, xml_node<>* node) {
+void setOrderedVariable(shared_ptr<Module> module, xml_node<>* node) {
     cout << "Variabile: " << node->first_attribute("name")->value() << endl;
-
-    std::shared_ptr<Variable> variable;
 
     //name
     string name = node->first_attribute("name")->value();
     
     //tipo (reale, intero ecc)
     string type = node->first_attribute("type")->value();
+    shared_ptr<BaseType> real = make_shared<BaseType>("Real");
+    
+    // unit
+    shared_ptr<Unit> mele = make_shared<Unit>("pesche");
+
+    //inizializzazione variabile
+    std::shared_ptr<Variable> foobar;
+    if (name == "myclass.z") {
+        foobar = make_shared<Parameter>(name, &mele, &real);
+        // foobar->setModule(module); //secondo me non compila
+        //CIAOOOOOOOOOONE
+    }
 
     //valore
 }
 
-void setVariables(Module* module, xml_node<>* node) {
+void setVariables(shared_ptr<Module> module, xml_node<>* node) {
     cout << "# inizio set variable" << endl;
 
     xml_node<>* variableNode = node->first_node()->first_node();
@@ -71,7 +86,7 @@ void setVariables(Module* module, xml_node<>* node) {
     if(node->next_sibling()) setVariables(module, node->next_sibling());
 }
 
-void parser(Module* module, xml_node<>* root) {
+void parser(shared_ptr<Module> module, xml_node<>* root) {
     xml_node<>* node = root->first_node();
     while(node) {
         auto nodeName = node->name();
