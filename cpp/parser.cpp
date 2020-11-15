@@ -61,16 +61,18 @@ void setAliasVariable(shared_ptr<Module> module, xml_node<>* node) {
 void setOrderedVariable(shared_ptr<Module> module, xml_node<>* node) {
     cout << "Variabile: " << node->first_attribute("name")->value() << endl;
 
-    //name
+    // name
     string name = node->first_attribute("name")->value();
-    
-    //tipo (reale, intero ecc)
+    // tipo (reale, intero ecc)
     string typeStr = node->first_attribute("type")->value();
-    // shared_ptr<BaseType> real = make_shared<BaseType>("Real");
     auto type = find_basetype(typeStr);
-    
     // unit
     shared_ptr<Unit> mele = make_shared<Unit>("pesche");
+    // fixed
+    string fixed = node->first_attribute("fixed")->value)();
+    // differentiatedIndex
+    bool diff = strcmp(node->first_attribute("differentiatedIndex")->value)(), "1") ? true : false;
+
 
     //inizializzazione variabile
     std::shared_ptr<Variable> parippappaparippari;
@@ -101,7 +103,7 @@ void setVariables(shared_ptr<Module> module, xml_node<>* node) {
     }
     
     cout << "# fine set variable" << endl;
-    // chiamata riorsiva se ci sono nodi fratelli
+    // chiamata ricorsiva se ci sono nodi fratelli
     if(node->next_sibling()) setVariables(module, node->next_sibling());
 }
 
@@ -113,7 +115,7 @@ void parser(shared_ptr<Module> module, xml_node<>* root) {
             setVariables(module, node->first_node());
             auto vars = module->getVars();
             for(auto it = 0; it < module->getVars().size(); it++) {
-                cout << it << endl;
+                cout << it+1 << endl;
             }
         } 
         else if(strcmp(nodeName, "equations") == 0) {
