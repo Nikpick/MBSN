@@ -1,5 +1,5 @@
 
-//#include "../headers/parser.h"
+// #include "../headers/parser.h"
 #include <rapidxml.hpp>
 // #include "../libraries/rapidxml-1.13/rapidxml.hpp"
 #include <string.h>
@@ -30,6 +30,22 @@ void getVariables(shared_ptr<Module> module, xml_document<>* doc, xml_node<>* no
 
 //SETTERS METHODS
 
+std::shared_ptr<Modeling::Type> find_basetype(const std::string& typeStr) {
+	std::shared_ptr<Modeling::Type> type;
+	if(typeStr == "Real")
+		type = std::make_shared<Modeling::BaseType>("Real");
+	else if(typeStr == "integer")
+		type = std::make_shared<Modeling::BaseType>("Integer");
+	else if (typeStr == "bool")
+		type = std::make_shared<Modeling::BaseType>("Boolean");
+	else if (typeStr == "string")
+		type = std::make_shared<Modeling::BaseType>("String");
+	else
+	    // throw NoTypeFoundException();
+        cout << "Type \"" << typeStr << "\" not found." << endl;
+	return type;
+}
+
 void setEquations(shared_ptr<Module> module, xml_node<>* node) {
     
 }
@@ -49,18 +65,21 @@ void setOrderedVariable(shared_ptr<Module> module, xml_node<>* node) {
     string name = node->first_attribute("name")->value();
     
     //tipo (reale, intero ecc)
-    string type = node->first_attribute("type")->value();
-    shared_ptr<BaseType> real = make_shared<BaseType>("Real");
+    string typeStr = node->first_attribute("type")->value();
+    // shared_ptr<BaseType> real = make_shared<BaseType>("Real");
+    auto type = find_basetype(typeStr);
     
     // unit
     shared_ptr<Unit> mele = make_shared<Unit>("pesche");
 
     //inizializzazione variabile
-    std::shared_ptr<Variable> foobar;
+    std::shared_ptr<Variable> parippappaparippari;
     if (name == "myclass.z") {
-        foobar = make_shared<Parameter>(name, &mele, &real);
-        // foobar->setModule(module); //secondo me non compila
-        //CIAOOOOOOOOOONE
+        parippappaparippari = make_shared<Parameter>(name, mele, type);
+        parippappaparippari->setModule(module);
+        cout << module->getVars().size() << "#############" << endl;
+
+        // cout << module->getVars() << edl;
     }
 
     //valore
@@ -92,6 +111,10 @@ void parser(shared_ptr<Module> module, xml_node<>* root) {
         auto nodeName = node->name();
         if(strcmp(nodeName, "variables") == 0) {
             setVariables(module, node->first_node());
+            auto vars = module->getVars();
+            for(auto it = 0; it < module->getVars().size(); it++) {
+                cout << it << endl;
+            }
         } 
         else if(strcmp(nodeName, "equations") == 0) {
             setEquations(module, node->first_node());
