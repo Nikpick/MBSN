@@ -69,9 +69,9 @@ void setOrderedVariable(shared_ptr<Module> module, xml_node<>* node) {
     // unit
     shared_ptr<Unit> mele = make_shared<Unit>("pesche");
     // fixed
-    string fixed = node->first_attribute("fixed")->value)();
+    string fixed = node->first_attribute("fixed")->value();
     // differentiatedIndex
-    bool diff = strcmp(node->first_attribute("differentiatedIndex")->value)(), "1") ? true : false;
+    bool diff = strcmp(node->first_attribute("differentiatedIndex")->value(), "1") ? true : false;
 
 
     //inizializzazione variabile
