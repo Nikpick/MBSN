@@ -34,11 +34,11 @@ std::shared_ptr<Modeling::Type> find_basetype(const std::string& typeStr) {
 	std::shared_ptr<Modeling::Type> type;
 	if(typeStr == "Real")
 		type = std::make_shared<Modeling::BaseType>("Real");
-	else if(typeStr == "integer")
+	else if(typeStr == "Integer")
 		type = std::make_shared<Modeling::BaseType>("Integer");
-	else if (typeStr == "bool")
+	else if (typeStr == "Bool")
 		type = std::make_shared<Modeling::BaseType>("Boolean");
-	else if (typeStr == "string")
+	else if (typeStr == "String")
 		type = std::make_shared<Modeling::BaseType>("String");
 	else
 	    // throw NoTypeFoundException();
@@ -59,32 +59,41 @@ void setAliasVariable(shared_ptr<Module> module, xml_node<>* node) {
 }
 
 void setOrderedVariable(shared_ptr<Module> module, xml_node<>* node) {
-    cout << "Variabile: " << node->first_attribute("name")->value() << endl;
+    std::shared_ptr<Variable> parippappaparippari;
 
     // name
-    string name = node->first_attribute("name")->value();
+    auto name = node->first_attribute("name")->value();
     // tipo (reale, intero ecc)
-    string typeStr = node->first_attribute("type")->value();
+    auto typeStr = node->first_attribute("type")->value();
     auto type = find_basetype(typeStr);
     // unit
-    shared_ptr<Unit> mele = make_shared<Unit>("pesche");
+    // shared_ptr<Unit> unit = make_shared<Unit>("");
+    auto unit = make_shared<Unit>("");
     // fixed
-    string fixed = node->first_attribute("fixed")->value();
+    auto fixed = strcmp(node->first_attribute("fixed")->value(), "true") ? true : false;
     // differentiatedIndex
-    bool diff = strcmp(node->first_attribute("differentiatedIndex")->value(), "1") ? true : false;
-
+    auto diff = false;
+    if(node->first_attribute("differentiatedIndex")) diff = true;
+    // inp
+    auto inp = false; // ????
+    // out
+    auto out = false; // ????
 
     //inizializzazione variabile
-    std::shared_ptr<Variable> parippappaparippari;
-    if (name == "myclass.z") {
-        parippappaparippari = make_shared<Parameter>(name, mele, type);
-        parippappaparippari->setModule(module);
-        cout << module->getVars().size() << "#############" << endl;
-
-        // cout << module->getVars() << edl;
+    if(diff) { // Specie
+        parippappaparippari = make_shared<Species>(name, unit, type);
     }
+    else { // Parameter
+        parippappaparippari = make_shared<Parameter>(name, unit, type, inp, out, fixed);
+    }
+    parippappaparippari->setModule(module);
 
-    //valore
+    // if (name == "myclass.z") {
+    //     parippappaparippari = make_shared<Parameter>(name, unit, type);
+    //     parippappaparippari->setModule(module);
+    //     cout << module->getVars().size() << "#############" << endl;
+    //     // cout << module->getVars() << edl;
+    // }
 }
 
 void setVariables(shared_ptr<Module> module, xml_node<>* node) {
@@ -99,7 +108,7 @@ void setVariables(shared_ptr<Module> module, xml_node<>* node) {
         }
     }
     else if(strcmp(node->name(), "aliasVariables") == 0) {
-        
+        // Come gestire le aliasVariables????
     }
     
     cout << "# fine set variable" << endl;
