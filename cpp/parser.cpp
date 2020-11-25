@@ -47,7 +47,13 @@ std::shared_ptr<Modeling::Type> find_basetype(const std::string& typeStr) {
 }
 
 void setEquations(shared_ptr<Module> module, xml_node<>* node) {
-    
+    if(strcmp(node->name(), "equation") == 0) {
+        auto expr = node->value();
+        cout << expr << endl;
+    }
+
+    // chiamata ricorsiva se ci sono nodi fratelli
+    if(node->next_sibling()) setEquations(module, node->next_sibling());
 }
 
 void setFunctions(shared_ptr<Module> module, xml_node<>* node) {
@@ -121,17 +127,17 @@ void parser(shared_ptr<Module> module, xml_node<>* root) {
     while(node) {
         auto nodeName = node->name();
         if(strcmp(nodeName, "variables") == 0) {
-            setVariables(module, node->first_node());
+            if(node->first_node()) setVariables(module, node->first_node());
             auto vars = module->getVars();
             for(auto it = 0; it < module->getVars().size(); it++) {
                 cout << it+1 << endl;
             }
         } 
         else if(strcmp(nodeName, "equations") == 0) {
-            setEquations(module, node->first_node());
+            if(node->first_node()) setEquations(module, node->first_node());
         }
         else if(strcmp(nodeName, "functions") == 0) {
-            setFunctions(module, node->first_node());
+            if(node->first_node()) setFunctions(module, node->first_node());
         }
         else cout << nodeName << " not found." << endl;
         
