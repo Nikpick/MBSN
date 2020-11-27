@@ -39,8 +39,9 @@ int main(int argc, char const *argv[])
     auto module = make_shared<Module>("system");
     auto root = doc.first_node("dae");
 
+    //auto root = doc.first_node("dae")->first_node("variables")->first_attribute("dimension")->value();
     cout << "First node name: " << root->name() << endl;
-    
+
     parser(module, root);
     
     return 0;
