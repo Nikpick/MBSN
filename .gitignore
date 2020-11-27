@@ -1,7 +1,6 @@
 # Ignored directories:
 /build/
 /build-*/
-/.vscode/
 
 # Ignored files:
 out.json
