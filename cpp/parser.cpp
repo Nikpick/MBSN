@@ -21,24 +21,6 @@ using namespace std;
 // '>' --> '&gt;'
 // '"' --> '&quot'
 
-//GETTERS METHODS
-void getEquations(shared_ptr<Module> module, xml_document<> *doc, xml_node<> *node)
-{
-    cout << node->name() << endl;
-}
-
-void getFunctions(shared_ptr<Module> module, xml_document<> *doc, xml_node<> *node)
-{
-    cout << node->name() << endl;
-}
-
-void getVariables(shared_ptr<Module> module, xml_document<> *doc, xml_node<> *node)
-{
-    cout << node->name() << endl;
-}
-
-//SETTERS METHODS
-
 std::shared_ptr<Modeling::Type> find_basetype(const std::string &typeStr)
 {
     std::shared_ptr<Modeling::Type> type;
@@ -58,10 +40,16 @@ std::shared_ptr<Modeling::Type> find_basetype(const std::string &typeStr)
 
 void setEquations(shared_ptr<Module> module, xml_node<> *node)
 {
-    if (strcmp(node->name(), "equation") == 0)
-    {
+    if (strcmp(node->name(), "equation") == 0) {
+        // estrazione dell'espressione sotto forma di stringa
         auto expr = node->value();
+        module->addExpression(expr);
         cout << expr << endl;
+    }
+    if (strcmp(node->name(), "algorithm") == 0) {
+        auto alg = node->value();
+        // Come gestire i nodi <algorithm> ???
+        cout << alg << endl;
     }
 
     // chiamata ricorsiva se ci sono nodi fratelli
@@ -188,6 +176,9 @@ void parser(shared_ptr<Module> module, xml_node<> *root)
         {
             if (node->first_node())
                 setEquations(module, node->first_node());
+            for(auto it = 0; it < module->getExpression().size(); it++) {
+                cout << it+1 << ") " + module->getExpression()[it] << endl;
+            }
         }
         else if (strcmp(nodeName, "functions") == 0)
         {
