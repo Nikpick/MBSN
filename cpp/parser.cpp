@@ -1,7 +1,9 @@
 
 // #include "../headers/parser.h"
 #include <rapidxml.hpp>
+// #include <rapidxml_ext.h>
 // #include "../libraries/rapidxml-1.13/rapidxml.hpp"
+#include <rapidxml_print.hpp>
 #include <string.h>
 #include <iostream>
 #include <fstream>
@@ -40,13 +42,19 @@ std::shared_ptr<Modeling::Type> find_basetype(const std::string &typeStr)
 
 void setEquations(shared_ptr<Module> module, xml_node<> *node)
 {
-    if (strcmp(node->name(), "equation") == 0) {
+    if (strcmp(node->name(), "equation") == 0)
+    {
         // estrazione dell'espressione sotto forma di stringa
         auto expr = node->value();
+        std::string mathMLExpr;
+        rapidxml::internal::print_node(std::back_inserter(mathMLExpr), node->first_node("MathML")->first_node(), 0, 0);
+        cout << mathMLExpr << endl;
         module->addExpression(expr);
+        module->addMathMLExpression(mathMLExpr);
         cout << expr << endl;
     }
-    if (strcmp(node->name(), "algorithm") == 0) {
+    if (strcmp(node->name(), "algorithm") == 0)
+    {
         auto alg = node->value();
         // Come gestire i nodi <algorithm> ???
         cout << alg << endl;
@@ -69,9 +77,8 @@ void setFunctions(shared_ptr<Module> module, xml_node<> *node)
         unsigned first = str.find("algorithm");
         unsigned veryFirst = first + 11;
         unsigned last = str.find(closureString);
-        string algo = str.substr(veryFirst,last-veryFirst);
+        string algo = str.substr(veryFirst, last - veryFirst);
 
-        
         cout << "Algoritmo: " << algo << "\n";
 
         functionNode = functionNode->next_sibling();
@@ -176,8 +183,9 @@ void parser(shared_ptr<Module> module, xml_node<> *root)
         {
             if (node->first_node())
                 setEquations(module, node->first_node());
-            for(auto it = 0; it < module->getExpression().size(); it++) {
-                cout << it+1 << ") " + module->getExpression()[it] << endl;
+            for (auto it = 0; it < module->getExpression().size(); it++)
+            {
+                cout << it + 1 << ") " + module->getExpression()[it] << endl;
             }
         }
         else if (strcmp(nodeName, "functions") == 0)

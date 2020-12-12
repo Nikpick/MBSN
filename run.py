@@ -11,7 +11,7 @@ import sys
 command = 'python3 python/modelica_to_xml.py'
 for arg in sys.argv[1:]:
     command += ' ' + arg
-# os.system("echo " + command)
+os.system("echo " + command)
 os.system(command)
 
 if(len(sys.argv) > 3): # se viene passato anche il nome del package, xmlFilename = PackageName.ClassName.xml
