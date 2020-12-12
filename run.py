@@ -21,3 +21,4 @@ else: # altrimenti xmlFilename = ClassName.xml
 # Popolazione del mclab-data-model
 os.system('./build/MBSN ' + xmlFilename)
 
+# Su Windows usare "os.system('build\MBSN ' + xmlFilename)"
