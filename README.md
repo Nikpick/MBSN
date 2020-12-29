@@ -25,6 +25,9 @@ PER OPENMODELICA
 in alternativa al comando precedente:
 - for PKG in `apt-cache search "omlib-.*" | cut -d" " -f1`; do sudo apt-get install -y "$PKG"; done # Installs optional Modelica libraries (most have not been tested with OpenModelica)
 
+PER OMPYTHON
+- python3 -m pip install -U https://github.com/OpenModelica/OMPython/archive/master.zip
+
 
 PER LIBXML++ 4.9.1
 - wget https://download.gnome.org/sources/libxml++/4.9/libxml++-4.9.1.tar.xz
