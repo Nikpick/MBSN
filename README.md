@@ -22,7 +22,6 @@ PER OPENMODELICA
 - sudo apt-get update
 - sudo apt-get install openmodelica
 - sudo apt-get install omlib-.*
-in alternativa al comando precedente:
 - for PKG in `apt-cache search "omlib-.*" | cut -d" " -f1`; do sudo apt-get install -y "$PKG"; done # Installs optional Modelica libraries (most have not been tested with OpenModelica)
 
 PER OMPYTHON
