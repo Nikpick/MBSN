@@ -9,7 +9,7 @@
 // // #include <json_reader.cpp>
 #include <rapidxml.hpp>
 #include "parser.cpp"
-
+#include "mathML_to_string.cpp"
 
 using namespace std;
 using namespace rapidxml;
@@ -43,6 +43,7 @@ int main(int argc, char const *argv[])
     cout << "First node name: " << root->name() << endl;
 
     parser(module, root);
+    mathML_to_string(module);
     
     return 0;
 }
