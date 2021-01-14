@@ -4,3 +4,8 @@
 #include <fstream>
 #include <iostream>
 #include <stdio.h>
+#include <string.h>
+
+using namespace std;
+
+Json::Value json_reader(string path);

@@ -11,8 +11,8 @@ void mathML_to_string(shared_ptr<Module> module) {
     for (auto mathMLExpr : mathMLExprs) {
         cout << i << ") " << mathMLExpr << "\n" <<endl;
         i++;
-        // ASTNode* ast    = readMathMLFromString((mathMLExpr));
-        // char*    result = SBML_formulaToL3String(ast);
+        //ASTNode* ast    = readMathMLFromString((mathMLExpr));
+        //char*    result = SBML_formulaToL3String(ast);
 
         // cout << result << endl;
         // Dove mettere result???
