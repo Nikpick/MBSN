@@ -1,10 +1,4 @@
-
-#include "../libraries/jsoncpp/json/json.h"
-#include "../libraries/jsoncpp/json/json-forwards.h"
-#include "../libraries/jsoncpp/jsoncpp.cpp"
-#include <fstream>
-#include <iostream>
-#include <stdio.h>
+#include "json_reader.h"
 
 using namespace std;
 

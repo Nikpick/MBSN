@@ -1,17 +1,8 @@
-
-// #include "../headers/parser.h"
-#include <rapidxml.hpp>
+#include "parser.h"
+#include "..\libraries\rapidxml-1.13\rapidxml_print.hpp"
 // #include <rapidxml_ext.h>
-// #include "../libraries/rapidxml-1.13/rapidxml.hpp"
-#include <rapidxml_print.hpp>
-#include <string.h>
-#include <iostream>
-#include <fstream>
-#include <Parameter.h>
-#include <Species.h>
-#include <BaseType.h>
-#include <Unit.h>
-#include <memory>
+#include "..\libraries\rapidxml-1.13\rapidxml_print.hpp"
+//#include "../libraries/vcpkg/installed/x86-windows/include/rapidxml/rapidxml_print.hpp"
 
 using namespace Modeling;
 using namespace rapidxml;

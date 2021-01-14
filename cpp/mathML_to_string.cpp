@@ -1,6 +1,4 @@
-#include <iostream>
-#include <Model/Module.h>
-#include <sbml/SBMLTypes.h> 
+#include "mathML_to_string.h"
 
 using namespace Modeling;
 using namespace std;
