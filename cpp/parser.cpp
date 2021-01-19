@@ -97,7 +97,7 @@ void setOrderedVariable(shared_ptr<Module> module, xml_node<> *node)
     auto type = find_basetype(typeStr);
     // unit
     // shared_ptr<Unit> unit = make_shared<Unit>("");
-    auto unit = make_shared<Unit>("");
+    auto unit = make_shared<Modeling::Unit>("");
     // fixed
     auto fixed = strcmp(node->first_attribute("fixed")->value(), "true") ? true : false;
     // differentiatedIndex
@@ -112,11 +112,11 @@ void setOrderedVariable(shared_ptr<Module> module, xml_node<> *node)
     //inizializzazione variabile
     if (diff)
     { // Specie
-        parippappaparippari = make_shared<Species>(name, unit, type);
+        parippappaparippari = make_shared<Modeling::Species>(name, unit, type);
     }
     else
     { // Parameter
-        parippappaparippari = make_shared<Parameter>(name, unit, type, inp, out, fixed);
+        parippappaparippari = make_shared<Modeling::Parameter>(name, unit, type, inp, out, fixed);
     }
     parippappaparippari->setModule(module);
 

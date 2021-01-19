@@ -11,6 +11,7 @@
 #include "cpp\mathML_to_string.h"
 #include <sbml\SBMLTypes.h>
 
+
 using namespace std;
 using namespace rapidxml;
 using namespace Modeling;
@@ -28,9 +29,8 @@ int main(int argc, char const *argv[])
        xmlAsString.append(line);
     }
 
-    int n = xmlAsString.length();
     char xmlAsCharArray[100+1];
-    strcpy(xmlAsCharArray, xmlAsString.c_str());
+    strcpy_s(xmlAsCharArray, xmlAsString.c_str());
 
     xml_document<> doc;
     doc.parse<0>(xmlAsCharArray);
