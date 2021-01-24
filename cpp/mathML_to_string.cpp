@@ -16,37 +16,39 @@ void mathML_to_string(shared_ptr<Module> module) {
 		i++;
 		//const char* c = mathMLExpr.c_str();
 
-		const char* c = "<?xml version='1.0' encoding='UTF-8'?>"
+		/*const char* c = "<?xml version='1.0' encoding='UTF-8'?>"  //Lo stesso contenuto che proviene da mathMLExpr.c_str()
 			"<math xmlns='http://www.w3.org/1998/Math/MathML'>"
 			"<apply>"
 			"<apply>"
-			"<ci> Params.a </ci>"
+			"<ci> Params </ci>"
 			"</apply>"
 			"<cn type = 'real'> 0.0 </cn>"
 			"</apply>"
-			"</math>";
+			"</math>";*/
 
-		/*const char* expected = "1 + f(x)";
+		const char* expected = "1 + f(x)";  //Risultato del MathML che segue per confronto risultati
 
-		const char* s = "<?xml version='1.0' encoding='UTF-8'?>"
+		const char* s = "<?xml version='1.0' encoding='UTF-8'?>"  //Contenuto di prova funzionante
 			"<math xmlns='http://www.w3.org/1998/Math/MathML'>"
 			"  <apply> <plus/> <cn> 1 </cn>"
 			"                  <apply> <ci> f </ci> <ci> x </ci> </apply>"
 			"  </apply>"
-			"</math>";*/
+			"</math>";
 
-		ASTNode* ast = readMathMLFromString(c);
+		ASTNode* ast = readMathMLFromString(s);
 		char* result = SBML_formulaToL3String(ast);
 
-		/*if (strcmp(result, expected) == 0)
-			std::cout << "Got expected result" << std::endl;
+		cout << result << endl;
+
+		if (strcmp(result, expected) == 0)
+			std::cout << "Got expected result\n\n" << std::endl;
 		else
-			std::cout << "Mismatch after readMathMLFromString()" << std::endl;*/
+			std::cout << "Mismatch after readMathMLFromString()\n\n" << std::endl;
 
 		ASTNode* new_mathml = SBML_parseL3Formula(result);
 		char* new_s = writeMathMLToString(new_mathml);
 
-		cout << new_s << endl;
+		cout << new_s << "\n" << endl;
 		//cout << c << endl;
 		// Dove mettere result???
 	}

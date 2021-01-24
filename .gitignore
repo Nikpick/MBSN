@@ -4,3 +4,6 @@
 
 # Ignored files:
 out.json
+CMakeSettings.json
+.vs/
+out/

@@ -16,35 +16,45 @@ using namespace Modeling;
 
 
 
-int main(int argc, char const *argv[])
+int main(int argc, char const* argv[])
 {
 
-    // Parsing dell'xml in dizionario
-    ifstream xml(argv[1]);
-    //ifstream xml("../../../TestModel.MyModel.xml", ios::in); //scegliere questo su Visual Studio
-    string xmlAsString, line;
+	// Parsing dell'xml in dizionario
+	//ifstream xml(argv[1]);
+	ifstream xml("../../../TestModel.MyModel.xml", ios::in); //scegliere questo su Visual Studio
+	//ifstream xml("../TestModel.MyModel.xml", ios::in); //scegliere questo su Visual Studio Code
 
-    while (std::getline(xml, line)) {
-       xmlAsString.append(line);
-    }
+	if (xml.fail()) {                           //Controllo se il file viene trovato
+		cout << "File non trovato.\n\n";
+	}
+	else
+	{
+		cout << "File trovato.\n\n";
+	}
 
-    char xmlAsCharArray[100000];
-    strcpy(xmlAsCharArray, xmlAsString.c_str());
+	string xmlAsString, line;
 
-    xml_document<> doc;
-    doc.parse<0>(xmlAsCharArray);
-    // Fine del parsing: la variabile doc contiene il dizionario
+	while (std::getline(xml, line))
+		xmlAsString.append(line);
+
+	char xmlAsCharArray[100000];
+	strcpy(xmlAsCharArray, xmlAsString.c_str());
+
+	xml_document<> doc;
+	doc.parse<0>(xmlAsCharArray);
+	// Fine del parsing: la variabile doc contiene il dizionario
 
 
-    // auto mod = std::make_shared<Modeling::Module>("foo");
-    auto module = make_shared<Module>("system");
-    auto root = doc.first_node("dae");
+	// auto mod = std::make_shared<Modeling::Module>("foo");
+	auto module = make_shared<Module>("system");
+	auto root = doc.first_node("dae");
 
-    //auto root = doc.first_node("dae")->first_node("variables")->first_attribute("dimension")->value();
-    cout << "First node name: " << root->name() << endl;
+	//auto root = doc.first_node("dae")->first_node("variables")->first_attribute("dimension")->value();
+	cout << "First node name: " << root->name() << endl;
 
-    parser(module, root);
-    mathML_to_string(module);
-    
-    return 0;
+	parser(module, root);
+	mathML_to_string(module);
+
+
+	return 0;
 }
