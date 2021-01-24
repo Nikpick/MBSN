@@ -30,7 +30,7 @@ int main(int argc, char const *argv[])
     }
 
     char xmlAsCharArray[100+1];
-    strcpy_s(xmlAsCharArray, xmlAsString.c_str());
+    strcpy(xmlAsCharArray, xmlAsString.c_str());
 
     xml_document<> doc;
     doc.parse<0>(xmlAsCharArray);

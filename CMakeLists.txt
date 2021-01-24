@@ -49,4 +49,4 @@ target_include_directories(
 )
 
 target_link_libraries(MBSN PRIVATE libsbml.lib)
-#target_link_libraries(MBSN PRIVATE jsoncpp.lib)
+target_link_libraries(MBSN PRIVATE jsoncpp.lib)
