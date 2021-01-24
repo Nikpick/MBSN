@@ -1,5 +1,3 @@
-
-
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -23,13 +21,14 @@ int main(int argc, char const *argv[])
 
     // Parsing dell'xml in dizionario
     ifstream xml(argv[1]);
+    //ifstream xml("../../../TestModel.MyModel.xml", ios::in); //scegliere questo su Visual Studio
     string xmlAsString, line;
 
     while (std::getline(xml, line)) {
        xmlAsString.append(line);
     }
 
-    char xmlAsCharArray[100+1];
+    char xmlAsCharArray[100000];
     strcpy(xmlAsCharArray, xmlAsString.c_str());
 
     xml_document<> doc;
