@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dae xmlns:p1="http://www.w3.org/1998/Math/MathML"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                                xsi:noNamespaceSchemaLocation="http://home.dei.polimi.it/donida/Projects/AutoEdit/Images/DAE.xsd">
+<variables dimension="6">
+<orderedVariables dimension="4">
+<variablesList>
+<variable id="1" name="myclass.y" variability="continuousState" direction="none" type="Real" differentiatedIndex="1" fixed="false" flow="NonConnector" stream="NonStreamConnector">
+<attributesValues>
+<unit string="&quot;&quot;">
+<MathML>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<cn type="constant">  
+</cn>
+</math>
+</MathML>
+</unit>
+</attributesValues>
+</variable>
+<variable id="2" name="myclass.x" variability="continuousState" direction="none" type="Real" differentiatedIndex="1" fixed="false" flow="NonConnector" stream="NonStreamConnector">
+<attributesValues>
+<unit string="&quot;&quot;">
+<MathML>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<cn type="constant">  
+</cn>
+</math>
+</MathML>
+</unit>
+</attributesValues>
+</variable>
+<variable id="3" name="Params.b" variability="continuousState" direction="none" type="Real" differentiatedIndex="1" fixed="false" flow="NonConnector" stream="NonStreamConnector">
+<attributesValues>
+<unit string="&quot;&quot;">
+<MathML>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<cn type="constant">  
+</cn>
+</math>
+</MathML>
+</unit>
+</attributesValues>
+</variable>
+<variable id="4" name="Params.a" variability="continuousState" direction="none" type="Real" differentiatedIndex="1" fixed="false" flow="NonConnector" stream="NonStreamConnector">
+<attributesValues>
+<unit string="&quot;&quot;">
+<MathML>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<cn type="constant">  
+</cn>
+</math>
+</MathML>
+</unit>
+</attributesValues>
+</variable>
+</variablesList>
+</orderedVariables>
+<aliasVariables dimension="2">
+<variablesList>
+<variable id="1" name="myclass.b" variability="continuous" direction="none" type="Real" fixed="false" flow="NonConnector" stream="NonStreamConnector">
+<bindExpression string="Params.b">
+<MathML>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> Params.b 
+</ci>
+</math>
+</MathML>
+</bindExpression>
+</variable>
+<variable id="2" name="myclass.a" variability="continuous" direction="none" type="Real" fixed="false" flow="NonConnector" stream="NonStreamConnector">
+<bindExpression string="Params.a">
+<MathML>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> Params.a 
+</ci>
+</math>
+</MathML>
+</bindExpression>
+</variable>
+</variablesList>
+</aliasVariables>
+</variables>
+<equations dimension="4">
+<equation id="1">der(myclass.y) = Params.b * myclass.x
+<MathML>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<equivalent/>
+<apply>
+<diff/>
+<ci> myclass.y 
+</ci>
+</apply>
+<apply>
+<times/>
+<ci> Params.b 
+</ci>
+<ci> myclass.x 
+</ci>
+</apply>
+</apply>
+</math>
+</MathML>
+</equation>
+<equation id="2">der(myclass.x) = Params.a * myclass.y
+<MathML>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<equivalent/>
+<apply>
+<diff/>
+<ci> myclass.x 
+</ci>
+</apply>
+<apply>
+<times/>
+<ci> Params.a 
+</ci>
+<ci> myclass.y 
+</ci>
+</apply>
+</apply>
+</math>
+</MathML>
+</equation>
+<equation id="3">der(Params.b) = 0.0
+<MathML>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<equivalent/>
+<apply>
+<diff/>
+<ci> Params.b 
+</ci>
+</apply>
+<cn type="real"> 0.0 
+</cn>
+</apply>
+</math>
+</MathML>
+</equation>
+<equation id="4">der(Params.a) = 0.0
+<MathML>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<equivalent/>
+<apply>
+<diff/>
+<ci> Params.a 
+</ci>
+</apply>
+<cn type="real"> 0.0 
+</cn>
+</apply>
+</math>
+</MathML>
+</equation>
+</equations>
+<functions>
+</functions>
+</dae>
