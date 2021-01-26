@@ -1,28 +1,45 @@
-import libsbml
-import os
-from xml.dom import minidom
-import xml.etree.ElementTree as ET
+from math import *
+try:
+    import libsbml
+except:
+    import tesbml as libsbml
+import operator
+
+def mathMLToString(mathml):
+      ast    = libsbml.readMathMLFromString(mathml)
+      result = libsbml.formulaToL3String(ast)
+
+      return result
 
 
-listXml = [] # lista degli xml presenti nella directory
-
-for files in os.listdir(os.getcwd()): # elenco elementi in dir corrente
-      if os.path.isfile(os.getcwd() + "/" + files): # controllo se elemento e' file
-            if files.endswith('.xml'): # prendo solo gli .xml
-                  listXml = listXml + [files] # mi salvo il nome del xml nella lista
-
-
-for nameXml in listXml:
-      fullPath = os.getcwd() + '/' + nameXml #path del file xml
-      tree = ET.parse(fullPath) #albero con i primi figli del file xml
-      root = tree.getroot() #radice del albero
-      print(root)
-      # find all "item" objects and print their "name" attribute
+      
+      #mathmlStr = """
+      #           <math xmlns="http://www.w3.org/1998/Math/MathML"><piecewise><piece><cn type="integer"> 8 </cn><apply><lt/><ci> x </ci><cn type="integer"> 4 </cn></apply></piece><piece><cn> 0.1 </cn><apply><and/><apply><leq/><cn type="integer"> 4 </cn><ci> x </ci></apply><apply><lt/><ci> x </ci><cn type="integer"> 6 </cn></apply></apply></piece><otherwise><cn type="integer"> 8 </cn></otherwise></piecewise></math>
+      #    """
+#
+      #    # evaluate the function with the values
+      #print(mathmlStr)
+      #print(mathml)
+      #astnode = libsbml.readMathMLFromString(mathmlStr)
+      #result = libsbml.formulaToL3String(astnode)
+#
+      #print(result)
 
 
+#listXml = [] # lista degli xml presenti nella directory
+#
+#
+#for files in os.listdir(os.getcwd()): # elenco elementi in dir corrente
+#      if os.path.isfile(os.getcwd() + "/" + files): # controllo se elemento e' file
+#            if files.endswith('.xml'): # prendo solo gli .xml
+#                  listXml = listXml + [files] # mi salvo il nome del xml nella lista
+#
+#listXml2 = []
 
-
-
+# for nameXml in listXml:
+#       fullPath = os.getcwd() + '/' + nameXml #path del file xml
+#       xmlDict = xmltodict(fullPath)
+#       listXml2 = listXml2 + [xmlDict]
 
 
 #expected = "1 + f(x)"

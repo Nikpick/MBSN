@@ -8,6 +8,7 @@ import sys
 import xmltodict
 from modelica_to_xml import modelica_to_xml
 import os
+from xmlParser import parser
 
 def main():
     dir = sys.argv[1] #nome directory
@@ -15,20 +16,17 @@ def main():
     if(len(sys.argv) > 3): #se si ha un terzo argomento allora = nome package
         package = sys.argv[3] 
     else: package = ""
-    modelica_to_xml(dir, className, package)
+    
+    # modelica_to_xml(dir, className, package)
+    
+    if(package != ""): 
+        xmlPath = "./" + package + "." + className + ".xml" #salviamo il path del file xml
+    else: xmlPath = "./" + className + ".xml"    
 
-
-
-    # dato il file xml lo si converte prima in dizionaio e poi in json 
-    # il json viene infine salvato nella dir corrente
-    # with open(className + '.xml') as fd:
-    #     myDict = xmltodict.parse(fd.read())
-    #     json.dump(myDict, open("out.json","w"), indent = "\t")
+    parser(xmlPath) #passiamo a parser il path salvato
 
     # rimozione del file .xml
-    # os.remove(className + '.xml')
-
-    # print("Modelica to json conversion:\tDone!")
+    # os.remove(xmlPath)
 
 
 main()

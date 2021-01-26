@@ -157,6 +157,60 @@
 </MathML>
 </equation>
 </equations>
+<initialEquations dimension="4">
+<equation id="1">Params.a = 0.0246
+<MathML>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<equivalent/>
+<ci> Params.a 
+</ci>
+<cn type="real"> 0.0246 
+</cn>
+</apply>
+</math>
+</MathML>
+</equation>
+<equation id="2">Params.b = 0.785
+<MathML>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<equivalent/>
+<ci> Params.b 
+</ci>
+<cn type="real"> 0.785 
+</cn>
+</apply>
+</math>
+</MathML>
+</equation>
+<equation id="3">myclass.x = 1.0
+<MathML>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<equivalent/>
+<ci> myclass.x 
+</ci>
+<cn type="real"> 1.0 
+</cn>
+</apply>
+</math>
+</MathML>
+</equation>
+<equation id="4">myclass.y = 2.0
+<MathML>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<equivalent/>
+<ci> myclass.y 
+</ci>
+<cn type="real"> 2.0 
+</cn>
+</apply>
+</math>
+</MathML>
+</equation>
+</initialEquations>
 <functions>
 </functions>
 </dae>

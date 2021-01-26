@@ -17,6 +17,6 @@ def modelica_to_xml(dir, className, package):
         className = package + '.' + className 
 
     # viene creato nella directory corrente il file xml corrispondente
-    omc.execute('dumpXMLDAE(' + className + ', translationLevel="backEnd", addMathMLCode=true)')
+    omc.execute('dumpXMLDAE(' + className + ', translationLevel="optimiser", addMathMLCode=true)')
 
     print("Modelica to xml conversion:\tDone!")

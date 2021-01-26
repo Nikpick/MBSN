@@ -5,3 +5,4 @@
 
 # Ignored files:
 out.json
+__pycache__
