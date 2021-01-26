@@ -1,9 +1,4 @@
-from math import *
-try:
-    import libsbml
-except:
-    import tesbml as libsbml
-import operator
+import libsbml
 
 def mathMLToString(mathml):
       ast    = libsbml.readMathMLFromString(mathml)

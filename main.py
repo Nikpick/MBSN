@@ -17,7 +17,7 @@ def main():
         package = sys.argv[3] 
     else: package = ""
     
-    # modelica_to_xml(dir, className, package)
+    modelica_to_xml(dir, className, package)
     
     if(package != ""): 
         xmlPath = "./" + package + "." + className + ".xml" #salviamo il path del file xml
